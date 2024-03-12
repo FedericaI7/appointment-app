@@ -4,9 +4,11 @@ import styles from "@/styles/Intro.module.scss";
 import Image from "next/image";
 import { useState } from "react";
 
+import { FaBell } from "react-icons/fa6";
+
 export default function intro() {
   const [imgNext, setImageNext] = useState(1);
-  const [isStartPage, setStartPage] = useState(false);
+  const [isStartPage, setStartPage] = useState(true);
 
   const onHandleBtnNext = () => {
     setImageNext((prev) => prev + 1);
@@ -24,8 +26,8 @@ export default function intro() {
       </Head>
 
       <main className={styles.main}>
-        {!isStartPage && (
-          <>
+        {/* {!isStartPage && (
+          <div className={styles.carousel}>
             <Image
               width={100}
               height={100}
@@ -40,10 +42,37 @@ export default function intro() {
             <button className={styles.btnNext} onClick={onHandleBtnNext}>
               Next
             </button>
-          </>
+          </div>
+        )} */}
+        {isStartPage && (
+          <div className={styles.userPage}>
+            <nav className={styles.nav}>
+              <div>
+                <h3>Hi user!</h3>
+                <p>How are you feeling now?</p>
+              </div>
+              <div>
+                <FaBell />
+              </div>
+            </nav>
+            <div className={styles.boxInfo}>
+              <div>
+                <h2>Stay at Home!</h2>
+                <p>Take care of your mental health</p>
+                <button>Meet online</button>
+              </div>
+              <div>
+                <Image
+                  src="/doctors.svg"
+                  width={100}
+                  height={100}
+                  alt="doctors"
+                />
+              </div>
+            </div>
+            {/* //---Our services--- */}
+          </div>
         )}
-
-        {isStartPage && <h1>Benvenuto nella pagina</h1>}
       </main>
     </>
   );
