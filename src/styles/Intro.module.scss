@@ -1,0 +1,35 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--turquoise-color);
+
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 20px;
+    color: var(--white-color);
+  }
+}
+
+.btnNext {
+  margin-top: 30px;
+  padding: 14px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-size: 18px;
+
+  &:hover {
+    color: var(--violet-color);
+  }
+}

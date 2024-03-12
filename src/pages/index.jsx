@@ -43,7 +43,7 @@ export default function Home() {
           <p>
             Already have an account?
             <span className={styles.signIn}>
-              <button> Sign in</button>
+              <button> Sign in</button> <button>Sign Up</button>
             </span>
           </p>
         </div>
