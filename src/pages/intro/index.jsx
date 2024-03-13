@@ -2,18 +2,31 @@ import Head from "next/head";
 import styles from "@/styles/Intro.module.scss";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { FaBell } from "react-icons/fa6";
+
+import { userData } from "@/API/Apicall";
 
 export default function intro() {
   const [imgNext, setImageNext] = useState(1);
   const [isStartPage, setStartPage] = useState(true);
+  const [user, setUser] = useState({});
 
   const onHandleBtnNext = () => {
     setImageNext((prev) => prev + 1);
     setStartPage(imgNext === 2);
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const users = await userData();
+      console.log(users);
+      setUser(users);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -70,7 +83,35 @@ export default function intro() {
                 />
               </div>
             </div>
-            {/* //---Our services--- */}
+            {/* //---Next appointments--- */}
+            <div className={styles.nextAppointments}>
+              <div className={styles.nav}>
+                <div>
+                  <h3>Next Appointments</h3>
+                </div>
+                <div>
+                  <a href="">See more</a>
+                </div>
+              </div>
+
+              {/* //boxes */}
+              <div className={styles.boxInfo}>
+                <div>
+                  <Image
+                    src="/2.svg"
+                    width={100}
+                    height={100}
+                    alt="doctor picture"
+                  />
+                </div>
+
+                <div>
+                  <h3>Nome dott</h3>
+                  <p>lorem Ipsum</p>
+                  <p>Data casuale</p>
+                </div>
+              </div>
+            </div>
           </div>
         )}
       </main>
