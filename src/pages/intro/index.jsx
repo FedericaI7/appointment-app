@@ -21,7 +21,7 @@ export default function intro() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const users = await userData();
+      const users = await userData(5);
       console.log(users);
       setUser(users);
     };
@@ -69,7 +69,7 @@ export default function intro() {
                 <FaBell />
               </div>
             </nav>
-            <div className={styles.boxInfo}>
+            <div className={styles.boxCard}>
               <div>
                 <h2>Stay at Home!</h2>
                 <p>Take care of your mental health</p>
@@ -95,8 +95,7 @@ export default function intro() {
                 </div>
               </div>
 
-              <DoctorCards />
-              
+              <DoctorCards userData={user} />
             </div>
           </div>
         )}

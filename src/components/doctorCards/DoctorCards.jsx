@@ -1,18 +1,32 @@
 import styles from "@/styles/doctorCard.module.scss";
+
 import Image from "next/image";
 
-const DoctorCards = () => {
+const DoctorCards = ({ userData }) => {
+  const { results } = userData;
   return (
     <div className={styles.DoctorCards}>
-      <div>
-        <Image src="/2.svg" width={100} height={100} alt="doctor picture" />
-      </div>
-
-      <div>
-        <h3>Nome dott</h3>
-        <p>lorem Ipsum</p>
-        <p>Data casuale</p>
-      </div>
+      {results?.map((el, index) => {
+        return (
+          <div className={styles.boxCard} key={index}>
+            <div>
+              <div>
+                <Image
+                  src={el.picture?.medium}
+                  width={100}
+                  height={100}
+                  alt="doctor picture"
+                />
+              </div>
+            </div>
+            <div>
+              <h3>{`Doct. ${el.name?.first} ${el.name?.last}`}</h3>
+              <p>lorem Ipsu</p>
+              <p>Data casuale</p>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };

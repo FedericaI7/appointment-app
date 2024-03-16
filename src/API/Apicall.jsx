@@ -1,4 +1,6 @@
-export const userData = async () => {
-  const res = await fetch("https://randomuser.me/api/?results=100&nat=gb");
+export const userData = async (number) => {
+  const res = await fetch(
+    `https://randomuser.me/api/?results=${number}&nat=gb`
+  );
   return res.json();
 };
