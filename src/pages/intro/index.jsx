@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { FaBell } from "react-icons/fa6";
 
 import { userData } from "@/API/Apicall";
+import DoctorCards from "@/components/doctorCards";
 
 export default function intro() {
   const [imgNext, setImageNext] = useState(1);
@@ -94,23 +95,8 @@ export default function intro() {
                 </div>
               </div>
 
-              {/* //boxes */}
-              <div className={styles.boxInfo}>
-                <div>
-                  <Image
-                    src="/2.svg"
-                    width={100}
-                    height={100}
-                    alt="doctor picture"
-                  />
-                </div>
-
-                <div>
-                  <h3>Nome dott</h3>
-                  <p>lorem Ipsum</p>
-                  <p>Data casuale</p>
-                </div>
-              </div>
+              <DoctorCards />
+              
             </div>
           </div>
         )}
