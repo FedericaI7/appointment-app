@@ -41,7 +41,7 @@ const DoctorCards = () => {
             </div>
 
             <div className={styles.infoBoxText}>
-              <h3>{`Doct. ${el.name?.first} ${el.name?.last}`}</h3>
+              <h3>{`Dr. ${el.name?.first} ${el.name?.last}`}</h3>
               <p className={styles.city}>{el.location.city}</p>
               <span
                 onClick={() => onHandleCall(el.phone)}
