@@ -42,8 +42,6 @@
 //startPage
 .userPage {
   background-color: var(--grey-light-color);
-  height: 100%;
-  width: 100%;
 }
 
 .nav {
@@ -57,4 +55,31 @@
   }
 }
 
+.boxCard {
+  background-color: var(--turquoise-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  gap: 50px;
 
+  h2 {
+    padding-top: 10px;
+  }
+
+  p {
+    padding-top: 8px;
+    width: 140px;
+  }
+
+  button {
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+}

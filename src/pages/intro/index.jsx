@@ -21,7 +21,7 @@ export default function intro() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const users = await userData(5);
+      const users = await userData(8);
       console.log(users);
       setUser(users);
     };
