@@ -1,5 +1,5 @@
 import styles from "@/styles/DoctorList.module.scss";
-import DoctorCards from "@/components/doctorCards";
+import DoctorCardsColumn from "@/components/doctorCardsColumn";
 
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function DoctorList() {
         </div>
       </nav>
 
-      <DoctorCards />
+      <DoctorCardsColumn />
     </div>
   );
 }

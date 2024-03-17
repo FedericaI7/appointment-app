@@ -1,6 +1,7 @@
 .DoctorList {
   width: 100%;
   height: 100%;
+  background-color: var(--grey-light-color);
 }
 
 .navTitle {
@@ -15,5 +16,9 @@
 
   .titleCenter {
     margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.17em;
   }
 }
