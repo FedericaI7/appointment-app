@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import { PiPhoneCallFill } from "react-icons/pi";
 
 const DoctorCards = () => {
-  // const { results } = userData;
   const [user, setUser] = useState({});
 
   useEffect(() => {
@@ -49,7 +48,6 @@ const DoctorCards = () => {
                 className={styles.telIcon}
               >
                 <PiPhoneCallFill />
-                {/* {el.phone} */}
               </span>
             </div>
           </div>
