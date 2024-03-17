@@ -1,11 +1,25 @@
-import styles from "@/styles/doctorCard.module.scss";
+import styles from "@/styles/DoctorCard.module.scss";
 
 import Image from "next/image";
-import { useState } from "react";
+import { userData } from "@/API/Apicall";
+import { useState, useEffect } from "react";
 import { PiPhoneCallFill } from "react-icons/pi";
 
-const DoctorCards = ({ userData }) => {
-  const { results } = userData;
+const DoctorCards = () => {
+  // const { results } = userData;
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const users = await userData(8);
+      console.log(users);
+      setUser(users);
+    };
+
+    fetchData();
+  }, []);
+
+  const { results } = user;
 
   const onHandleCall = (phone) => {
     let phoneNew = phone.replaceAll(" ", "");

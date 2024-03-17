@@ -6,28 +6,18 @@ import { useState, useEffect } from "react";
 
 import { FaBell } from "react-icons/fa6";
 
-import { userData } from "@/API/Apicall";
-import DoctorCards from "@/components/doctorCards";
 
-export default function intro() {
+import DoctorCards from "@/components/doctorCards";
+import Link from "next/link";
+
+export default function Intro() {
   const [imgNext, setImageNext] = useState(1);
   const [isStartPage, setStartPage] = useState(true);
-  const [user, setUser] = useState({});
 
   const onHandleBtnNext = () => {
     setImageNext((prev) => prev + 1);
     setStartPage(imgNext === 2);
   };
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const users = await userData(8);
-      console.log(users);
-      setUser(users);
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <>
@@ -91,11 +81,11 @@ export default function intro() {
                   <h3>Next Appointments</h3>
                 </div>
                 <div>
-                  <a href="">See more</a>
+                  <Link href="/doctorList">See more</Link>
                 </div>
               </div>
 
-              <DoctorCards userData={user} />
+              <DoctorCards />
             </div>
           </div>
         )}
