@@ -3,6 +3,7 @@ import Image from "next/image";
 import { userData } from "@/API/Apicall";
 import { useState, useEffect } from "react";
 import { PiPhoneCallFill } from "react-icons/pi";
+import Link from "next/link";
 
 const DoctorCardsColumn = () => {
   const [user, setUser] = useState({});
@@ -12,6 +13,7 @@ const DoctorCardsColumn = () => {
     const fetchData = async () => {
       try {
         const users = await userData(20);
+        console.log(users);
         setUser(users);
       } catch (error) {
         console.error("Errore nel caricamento dei dati degli utenti:", error);
@@ -46,6 +48,7 @@ const DoctorCardsColumn = () => {
   return (
     <div className={styles.DoctorCardsColumn}>
       {results?.map((el, index) => {
+        const genderColor = el.gender === "male" ? "#a8dcd9" : "pink";
         return (
           <div className={styles.boxCardColumn} key={index}>
             <div>
@@ -59,14 +62,22 @@ const DoctorCardsColumn = () => {
 
             <div className={styles.infoBoxText}>
               <h3>{`Dr. ${el.name?.first} ${el.name?.last}`}</h3>
-              <p>{dataJson[index]?.job}</p>
+
+              <p style={{ color: genderColor }} className={styles.job}>
+                {dataJson[index]?.job}
+              </p>
+
               <p className={styles.city}>{el.location.city}</p>
+
               <span
                 onClick={() => onHandleCall(el.phone)}
                 className={styles.telIcon}
               >
                 <PiPhoneCallFill />
               </span>
+              <div className={styles.appointment}>
+                <Link href="/boh">Appointment</Link>
+              </div>
             </div>
           </div>
         );
