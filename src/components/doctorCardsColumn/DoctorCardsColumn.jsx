@@ -3,7 +3,7 @@ import Image from "next/image";
 import { userData } from "@/API/Apicall";
 import { useState, useEffect } from "react";
 import { PiPhoneCallFill } from "react-icons/pi";
-import Link from "next/link";
+
 import { useRouter } from "next/router";
 
 const DoctorCardsColumn = () => {
