@@ -1,8 +1,8 @@
 import styles from "@/styles/DoctorList.module.scss";
-import DoctorCardsColumn from "@/components/doctorCardsColumn";
 
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
+import DoctorCardsColumn from "@/components/doctorCardsColumn";
 
 export default function DoctorList() {
   return (

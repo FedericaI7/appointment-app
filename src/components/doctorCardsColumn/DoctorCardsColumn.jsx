@@ -1,5 +1,4 @@
 import styles from "@/styles/DoctorCardsColumn.module.scss";
-
 import Image from "next/image";
 import { userData } from "@/API/Apicall";
 import { useState, useEffect } from "react";
@@ -7,15 +6,33 @@ import { PiPhoneCallFill } from "react-icons/pi";
 
 const DoctorCardsColumn = () => {
   const [user, setUser] = useState({});
+  const [dataJson, setDataJson] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
-      const users = await userData(30);
-      console.log(users);
-      setUser(users);
+      try {
+        const users = await userData(20);
+        setUser(users);
+      } catch (error) {
+        console.error("Errore nel caricamento dei dati degli utenti:", error);
+      }
     };
 
     fetchData();
+  }, []);
+
+  useEffect(() => {
+    const fetchDataJson = async () => {
+      try {
+        const response = await fetch("/dati.json");
+        const jsonData = await response.json();
+        setDataJson(jsonData);
+      } catch (error) {
+        console.error("Errore nel caricamento dei dati JSON:", error);
+      }
+    };
+
+    fetchDataJson();
   }, []);
 
   const { results } = user;
@@ -42,6 +59,7 @@ const DoctorCardsColumn = () => {
 
             <div className={styles.infoBoxText}>
               <h3>{`Dr. ${el.name?.first} ${el.name?.last}`}</h3>
+              <p>{dataJson[index]?.job}</p>
               <p className={styles.city}>{el.location.city}</p>
               <span
                 onClick={() => onHandleCall(el.phone)}
