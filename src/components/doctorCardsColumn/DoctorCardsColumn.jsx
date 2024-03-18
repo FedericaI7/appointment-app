@@ -4,10 +4,12 @@ import { userData } from "@/API/Apicall";
 import { useState, useEffect } from "react";
 import { PiPhoneCallFill } from "react-icons/pi";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const DoctorCardsColumn = () => {
   const [user, setUser] = useState({});
   const [dataJson, setDataJson] = useState();
+  const router = useRouter();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,6 +47,10 @@ const DoctorCardsColumn = () => {
     window.location.href = `tel:${phoneNew}`;
   };
 
+  const onHandleBtnAppointment = (name) => {
+    router.push(`/doctorList/${name}`);
+  };
+
   return (
     <div className={styles.DoctorCardsColumn}>
       {results?.map((el, index) => {
@@ -75,9 +81,14 @@ const DoctorCardsColumn = () => {
               >
                 <PiPhoneCallFill />
               </span>
-              <div className={styles.appointment}>
-                <Link href="/boh">Appointment</Link>
-              </div>
+
+              <button
+                onClick={() =>
+                  onHandleBtnAppointment(`${el.name.first}${el.name.last}`)
+                }
+              >
+                Appointment
+              </button>
             </div>
           </div>
         );
