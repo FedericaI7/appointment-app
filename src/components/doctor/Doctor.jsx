@@ -8,42 +8,42 @@ const Doctor = () => {
   const [user, setUser] = useState({});
   const [dataJson, setDataJson] = useState();
   const router = useRouter();
+  // const [id, setId] = useState("");
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const users = await userData(20);
-        console.log(users);
-        setUser(users);
-      } catch (error) {
-        console.error("Errore nel caricamento dei dati degli utenti:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const users = await userData(20);
+  //       console.log(users);
+  //       setUser(users);
+  //     } catch (error) {
+  //       console.error("Errore nel caricamento dei dati degli utenti:", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
-  useEffect(() => {
-    const fetchDataJson = async () => {
-      try {
-        const response = await fetch("/dati.json");
-        const jsonData = await response.json();
-        setDataJson(jsonData);
-      } catch (error) {
-        console.error("Errore nel caricamento dei dati JSON:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchDataJson = async () => {
+  //     try {
+  //       const response = await fetch("/dati.json");
+  //       const jsonData = await response.json();
+  //       setDataJson(jsonData);
+  //     } catch (error) {
+  //       console.error("Errore nel caricamento dei dati JSON:", error);
+  //     }
+  //   };
 
-    fetchDataJson();
-  }, []);
+  //   fetchDataJson();
+  // }, []);
 
-  const queryParams = router.query;
-  console.log(queryParams);
+  const { id } = router.query;
 
   return (
     <div className={styles.Doctor}>
       <div className={styles.DoctorListDynamic}>
-        <h1>Benvenuto</h1>
+        <h1>Benvenuto {id}</h1>
       </div>
     </div>
   );

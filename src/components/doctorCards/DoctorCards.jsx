@@ -5,8 +5,6 @@ import { userData } from "@/API/Apicall";
 import { useState, useEffect } from "react";
 import { PiPhoneCallFill } from "react-icons/pi";
 
-
-
 const DoctorCards = () => {
   const [user, setUser] = useState({});
 
@@ -21,8 +19,6 @@ const DoctorCards = () => {
   }, []);
 
   const { results } = user;
-
-  
 
   const onHandleCall = (phone) => {
     let phoneNew = phone.replaceAll(" ", "");

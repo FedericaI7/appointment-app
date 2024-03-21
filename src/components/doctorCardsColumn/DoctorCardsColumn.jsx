@@ -47,8 +47,10 @@ const DoctorCardsColumn = () => {
     window.location.href = `tel:${phoneNew}`;
   };
 
-  const onHandleBtnAppointment = (name) => {
-    router.push(`/doctorList/${name}`);
+  const onHandleBtnAppointment = (name, id) => {
+    router.push(`/doctorList/${name}?id=${id}`);
+    // console.log("sono l'id" + id);
+    // router.push(`/doctorList/${name}`);
   };
 
   return (
@@ -84,7 +86,10 @@ const DoctorCardsColumn = () => {
 
               <button
                 onClick={() =>
-                  onHandleBtnAppointment(`${el.name.first}${el.name.last}`)
+                  onHandleBtnAppointment(
+                    `${el.name.first}${el.name.last}`,
+                    `${el.registered?.date}`
+                  )
                 }
               >
                 Appointment
