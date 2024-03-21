@@ -3,10 +3,11 @@ import styles from "@/styles/Doctor.module.scss";
 import { userData } from "@/API/Apicall";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Data from "../data";
 
 const Doctor = () => {
-  const [user, setUser] = useState({});
-  const [dataJson, setDataJson] = useState();
+  // const [user, setUser] = useState({});
+  // const [dataJson, setDataJson] = useState();
   const router = useRouter();
 
   // useEffect(() => {
@@ -40,11 +41,22 @@ const Doctor = () => {
   const { id } = router.query;
 
   return (
-    <div className={styles.Doctor}>
-      <div className={styles.DoctorListDynamic}>
-        <h1>Benvenuto {id}</h1>
-      </div>
-    </div>
+    <Data>
+      {({ user, dataJson }) => {
+        const { results } = user;
+        const findDoctor = results?.filter((el) => el.registered?.date === id);
+        {
+          console.log(findDoctor);
+        }
+        return (
+          <div className={styles.Doctor}>
+            <div className={styles.DoctorListDynamic}>
+              <h1>Benvenuto {id}</h1>
+            </div>
+          </div>
+        );
+      }}
+    </Data>
   );
 };
 
