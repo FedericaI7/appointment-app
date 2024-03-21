@@ -8,7 +8,6 @@ const Doctor = () => {
   const [user, setUser] = useState({});
   const [dataJson, setDataJson] = useState();
   const router = useRouter();
-  // const [id, setId] = useState("");
 
   // useEffect(() => {
   //   const fetchData = async () => {

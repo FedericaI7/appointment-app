@@ -49,8 +49,6 @@ const DoctorCardsColumn = () => {
 
   const onHandleBtnAppointment = (name, id) => {
     router.push(`/doctorList/${name}?id=${id}`);
-    // console.log("sono l'id" + id);
-    // router.push(`/doctorList/${name}`);
   };
 
   return (
