@@ -2,7 +2,9 @@ import styles from "@/styles/DoctorList.module.scss";
 
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
+
 import DoctorCardsColumn from "@/components/doctorCardsColumn";
+// import { useState, useEffect } from "react";
 
 export default function DoctorList() {
   return (
@@ -17,7 +19,6 @@ export default function DoctorList() {
           <h1>All Doctors</h1>
         </div>
       </nav>
-
       <DoctorCardsColumn />
     </div>
   );

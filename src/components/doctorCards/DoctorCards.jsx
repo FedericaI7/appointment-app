@@ -18,8 +18,6 @@ const DoctorCards = () => {
     fetchData();
   }, []);
 
-  const { results } = user;
-
   const onHandleCall = (phone) => {
     let phoneNew = phone.replaceAll(" ", "");
     console.log(phoneNew);
@@ -28,7 +26,7 @@ const DoctorCards = () => {
 
   return (
     <div className={styles.DoctorCards}>
-      {results?.map((el, index) => {
+      {/* {results?.map((el, index) => {
         return (
           <div className={styles.boxCard} key={index}>
             <div>
@@ -52,7 +50,7 @@ const DoctorCards = () => {
             </div>
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 };
