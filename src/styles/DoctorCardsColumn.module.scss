@@ -10,7 +10,7 @@
 }
 
 .boxCardColumn {
-  background-color: var(--turquoise-color);
+  background-color: #ebebeb;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -68,8 +68,8 @@
     width: 160px;
     height: 30px;
     margin-top: 10px;
-    background-color: var(--grey-light-color);
-    color: var(--black-color);
+    background-color: #4780d7;
+    color: #ebebeb;
     font-size: 14px;
     font-weight: bold;
     border: none;
