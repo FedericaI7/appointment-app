@@ -6,9 +6,15 @@ import { useState, useEffect } from "react";
 
 import { FaBell } from "react-icons/fa6";
 
-
 import DoctorCards from "@/components/doctorCards";
 import Link from "next/link";
+
+import { BsHeartPulseFill } from "react-icons/bs";
+import { FaStethoscope } from "react-icons/fa";
+import { RiPsychotherapyFill } from "react-icons/ri";
+import { GiBarefoot } from "react-icons/gi";
+import { GiBrain } from "react-icons/gi";
+import { FaHandHoldingMedical } from "react-icons/fa";
 
 export default function Intro() {
   const [imgNext, setImageNext] = useState(1);
@@ -74,15 +80,54 @@ export default function Intro() {
                 />
               </div>
             </div>
+            {/* -----OUR SERVICES----- */}
+            <div className={styles.nextAppointments}>
+              <div className={styles.nav}>
+                <div>
+                  <h3>Our Services</h3>
+                </div>
+                <div>
+                  <Link href="/doctorList">See more</Link>
+                </div>
+              </div>
+              {/* //Carousel */}
+              <div className={styles.icon}>
+                <Link href="/doctorList" className={styles.boxIcon}>
+                  <BsHeartPulseFill />
+                  <p>Cardiologist</p>
+                </Link>
+                <Link href="/doctorList" className={styles.boxIcon}>
+                  <FaStethoscope />
+                  <p>Pediatrician</p>
+                </Link>
+                <Link href="/doctorList" className={styles.boxIcon}>
+                  <RiPsychotherapyFill />
+                  <p>Psychiatrist</p>
+                </Link>
+                <Link href="/doctorList" className={styles.boxIcon}>
+                  <GiBarefoot />
+                  <p>Orthopedic Surgeon</p>
+                </Link>
+                <Link href="/doctorList" className={styles.boxIcon}>
+                  <GiBrain />
+                  <p>Neurologist</p>
+                </Link>
+                <Link href="/doctorList" className={styles.boxIcon}>
+                  <FaHandHoldingMedical />
+                  <p>Dermatologist</p>
+                </Link>
+              </div>
+            </div>
+
             {/* //---Next appointments--- */}
             <div className={styles.nextAppointments}>
               <div className={styles.nav}>
                 <div>
                   <h3>Next Appointments</h3>
                 </div>
-                <div>
+                <span>
                   <Link href="/doctorList">See more</Link>
-                </div>
+                </span>
               </div>
 
               <DoctorCards />
