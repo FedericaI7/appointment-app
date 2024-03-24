@@ -81,7 +81,7 @@ const Doctor = () => {
                       <span>
                         <FaUserDoctor />
                       </span>
-                      <p>{dataJson[id - 1].experience}</p>
+                      <p>{dataJson[id - 1].experience + "y"}</p>
                     </div>
                     {/* ---three-- */}
                     <div className={styles.box}>
@@ -93,10 +93,18 @@ const Doctor = () => {
                     </div>
                   </section>
                   {/* ----ABOUT------- */}
-                  <section>
-                    <h4>About</h4>
-                    <p>{dataJson[id - 1].description}</p>
+                  <section className={styles.bottomInfo}>
+                    <span>
+                      <h4>About</h4>
+                      <p>{dataJson[id - 1].description}</p>
+                    </span>
+                    {/* ---CONSULTATION--- */}
+                    <span>
+                      <h4>Consultation</h4>
+                      <p>Consultation free</p>
+                    </span>
                   </section>
+                  <button>Book an Appointment</button>
                 </main>
               </div>
             ))}

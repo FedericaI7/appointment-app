@@ -3,13 +3,13 @@
   height: 100%;
   min-height: 100vh;
   background-color: var(--white-color);
+  padding: 30px 30px 16px 30px;
 }
 
 .navTitle {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 30px 30px 16px 30px;
 }
 
 .titleCenter {
@@ -57,4 +57,12 @@
     background-color: var(--white-box);
     border-radius: 10px;
   }
+}
+
+.bottomInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
