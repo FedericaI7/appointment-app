@@ -24,7 +24,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--pink-red-color);
+  background-color: var(--blue-color);
 }
 
 .mainContainer {
@@ -38,7 +38,7 @@
   h1 {
     width: 300px;
     font-size: 30px;
-    color: var(--violet-dark-color);
+    color: var(--black-color);
   }
 }
 
@@ -72,7 +72,7 @@
   padding-top: 100px;
   width: 300px;
   line-height: 1.5;
-  color: var(--violet-dark-color);
+  color: var(--white-color);
 }
 
 //resultFace
@@ -109,7 +109,7 @@
   border-radius: 20px;
 
   a {
-    color: var(--turquoise-color);
+    color: var(--blue-color);
   }
 
   &:hover {

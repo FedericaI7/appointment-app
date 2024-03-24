@@ -10,7 +10,7 @@
 }
 
 .boxCardColumn {
-  background-color: #ebebeb;
+  background-color: var(--white-box);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +31,6 @@
 }
 
 .infoBoxText {
-  // padding-top: 10px;
   text-align: center;
 
   h3 {
@@ -61,14 +60,14 @@
   .city {
     padding-top: 8px;
     font-size: 12px;
-    color: var(--violet-dark-color);
+    color: var(--black-color);
   }
 
   button {
     width: 160px;
     height: 30px;
     margin-top: 10px;
-    background-color: #4780d7;
+    background-color: var(--blue-color);
     color: #ebebeb;
     font-size: 14px;
     font-weight: bold;

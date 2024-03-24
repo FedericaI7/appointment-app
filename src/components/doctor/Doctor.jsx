@@ -29,7 +29,7 @@ const Doctor = () => {
               <div key={index}>
                 <nav className={styles.navTitle}>
                   <span className={styles.iconBack}>
-                    <Link href="/intro">
+                    <Link href="/doctorList">
                       <IoIosArrowBack />
                     </Link>
                   </span>

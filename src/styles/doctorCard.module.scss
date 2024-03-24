@@ -5,7 +5,7 @@
 
 .boxCard {
   // background-color: #b4d4ee;
-  background-color: #ebebeb;
+  background-color: var(--white-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,7 +49,7 @@
   .telIcon {
     display: flex;
     align-items: center;
-    background-color: #4780d7;
+    background-color: var(--blue-color);
     border-radius: 16px;
     padding: 10px;
     cursor: pointer;
@@ -59,7 +59,7 @@
   .city {
     padding-top: 8px;
     font-size: 16px;
-    color: var(--violet-dark-color);
+    color: var(--black-color);
   }
 
   .callToAction {
@@ -69,7 +69,7 @@
 
     .dateAppointment {
       font-size: 14px;
-      color: #4780d7;
+      color: var(--blue-color);
     }
   }
 }

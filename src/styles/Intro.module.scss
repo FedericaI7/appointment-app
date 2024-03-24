@@ -30,7 +30,7 @@
   border: none;
   font-weight: bold;
   cursor: pointer;
-  background-color: #e2dede;
+  background-color: var(--white-color);
   color: var(--black-color);
   font-size: 18px;
 
@@ -45,7 +45,7 @@
 }
 
 .boxCard {
-  background-color: #9bb4dc;
+  background-color: var(--light-blue-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
