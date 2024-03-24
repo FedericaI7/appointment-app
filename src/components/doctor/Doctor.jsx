@@ -7,6 +7,10 @@ import Data from "../data";
 import { IoIosArrowBack } from "react-icons/io";
 import { GoHeartFill } from "react-icons/go";
 import { TiLocation } from "react-icons/ti";
+import { FaPeopleRoof } from "react-icons/fa6";
+import { FaUserDoctor } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -45,18 +49,54 @@ const Doctor = () => {
                     <GoHeartFill />
                   </span>
                 </nav>
+
+                {/* --MAIN-- */}
                 <main className={styles.main}>
-                  <h1>{`${el.name.first} ${el.name.last}`}</h1>
-                  <p>{dataJson.job}</p>
-                  <p>{dataJson.gender}</p>
-                  {console.log(findDoctor)}
-                  <div className={styles.location}>
-                    <span className={styles.locationIcon}>
-                      <TiLocation />
-                    </span>
-                    {el.location.city}
-                  </div>
-                  <p>{dataJson[id - 1].job}</p>
+                  <section className={styles.infoDoctor}>
+                    <h1>{`${el.name.first} ${el.name.last}`}</h1>
+                    <p>{dataJson.job}</p>
+                    <p>{dataJson.gender}</p>
+                    <div className={styles.location}>
+                      <span className={styles.locationIcon}>
+                        <TiLocation />
+                      </span>
+                      {el.location.city}
+                    </div>
+                    <p>{dataJson[id - 1].job}</p>
+                  </section>
+
+                  {/* ---SECTION BOX--- */}
+                  <section className={styles.boxInfo}>
+                    {/* --one-- */}
+                    <div className={styles.box}>
+                      <h5>Patients</h5>
+                      <span>
+                        <FaPeopleRoof />
+                      </span>
+                      <p>{dataJson[id - 1].patients}</p>
+                    </div>
+                    {/* ---two-- */}
+                    <div className={styles.box}>
+                      <h5>Experience</h5>
+                      <span>
+                        <FaUserDoctor />
+                      </span>
+                      <p>{dataJson[id - 1].experience}</p>
+                    </div>
+                    {/* ---three-- */}
+                    <div className={styles.box}>
+                      <h5>Rating</h5>
+                      <span>
+                        <FaStar />
+                      </span>
+                      <p>{dataJson[id - 1].rating}</p>
+                    </div>
+                  </section>
+                  {/* ----ABOUT------- */}
+                  <section>
+                    <h4>About</h4>
+                    <p>{dataJson[id - 1].description}</p>
+                  </section>
                 </main>
               </div>
             ))}

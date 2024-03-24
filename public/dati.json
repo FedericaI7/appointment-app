@@ -36,7 +36,7 @@
     "patients": 1200,
     "experience": 12,
     "rating": 4,
-    "description": "Dr. Giulia Rizzo graduated in medicine and surgery from the University of Padua. She completed her specialization in orthopedics and traumatology in Venice, where she gained experience in complex orthopedic surgeries."
+    "description": "Specialized in orthopedics and traumatology in Venice, where gained experience in complex orthopedic surgeries."
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
     "patients": 1000,
     "experience": 7,
     "rating": 3,
-    "description": "Dr. Salvatore Ferraro obtained his degree in psychiatry from the University of Palermo. He has experience in clinical psychiatry, with a particular interest in mood and anxiety disorders."
+    "description": "Obtained psychiatry degree from the University of Palermo. Experience in clinical psychiatry, with particular interest in mood and anxiety disorders."
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
     "patients": 900,
     "experience": 9,
     "rating": 5,
-    "description": "Dr. Antonio Ferrari graduated from the University of Naples Federico II. With nine years of experience in pediatrics, he specializes in child development and pediatric care."
+    "description": "Graduated from the University of Naples Federico II. Specializes in child development and pediatric care."
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
     "patients": 1100,
     "experience": 11,
     "rating": 4,
-    "description": "Dr. Paolo Barbieri completed his medical education at the University of Genoa. He has over a decade of experience in neurology, focusing on neurological disorders and treatments."
+    "description": "Completed medical education at the University of Genoa. Over a decade of experience in neurology, focusing on neurological disorders and treatments."
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
     "patients": 950,
     "experience": 6,
     "rating": 4,
-    "description": "Dr. Giovanni Conti received his medical degree from the University of Turin. With six years of experience as an ophthalmologist, he specializes in eye surgeries and vision correction."
+    "description": "Received medical degree from the University of Turin. Six years of experience as an ophthalmologist, specializing in eye surgeries and vision correction."
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@
     "patients": 850,
     "experience": 7,
     "rating": 5,
-    "description": "Dr. Valentina Moretti graduated from the University of Milan and completed her specialization in endocrinology at the renowned San Raffaele Hospital. She has seven years of experience in managing endocrine disorders."
+    "description": "Graduated from the University of Milan, completed specialization in endocrinology at San Raffaele Hospital. Seven years of experience in managing endocrine disorders."
   },
   {
     "id": 9,
@@ -114,7 +114,7 @@
     "patients": 1200,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Alessia Gallo obtained her psychiatry degree from the University of Milan. She has eight years of experience in psychiatric practice, specializing in mood disorders and psychotherapy."
+    "description": "Obtained psychiatry degree from the University of Milan. Eight years of experience in psychiatric practice, specializing in mood disorders and psychotherapy."
   },
   {
     "id": 10,
@@ -127,9 +127,8 @@
     "patients": 700,
     "experience": 6,
     "rating": 4,
-    "description": "Dr. Roberto Marini completed his medical studies at the University of Florence and specialized in hematology at Careggi University Hospital. He has six years of experience in diagnosing and treating blood disorders."
+    "description": "Completed medical studies at the University of Florence, specialized in hematology at Careggi University Hospital. Six years of experience in diagnosing and treating blood disorders."
   },
-
   {
     "id": 11,
     "job": "Pulmonologist",
@@ -141,7 +140,7 @@
     "patients": 950,
     "experience": 9,
     "rating": 4,
-    "description": "Dr. Anna Gentile graduated from the University of Naples Federico II and completed her pulmonology residency at Naples University Hospital. With nine years of experience, she specializes in respiratory diseases and critical care."
+    "description": "Graduated from the University of Naples Federico II, completed pulmonology residency at Naples University Hospital. Nine years of experience, specializing in respiratory diseases and critical care."
   },
   {
     "id": 12,
@@ -154,7 +153,7 @@
     "patients": 1100,
     "experience": 10,
     "rating": 4,
-    "description": "Dr. Federico Rossi obtained his medical degree from the University of Rome. He completed his residency in urology at Rome General Hospital and has a decade of experience in treating urological conditions."
+    "description": "Obtained medical degree from the University of Rome, completed residency in urology at Rome General Hospital. Decade of experience in treating urological conditions."
   },
   {
     "id": 13,
@@ -167,7 +166,7 @@
     "patients": 1300,
     "experience": 11,
     "rating": 5,
-    "description": "Dr. Enrico Ferrari graduated from the University of Milan and completed his dermatology residency at Milan Dermatology Center. With eleven years of experience, he specializes in cosmetic dermatology and skin cancer treatment."
+    "description": "Graduated from the University of Milan, completed dermatology residency at Milan Dermatology Center. With eleven years of experience, specializes in cosmetic dermatology and skin cancer treatment."
   },
   {
     "id": 14,
@@ -180,7 +179,7 @@
     "patients": 1400,
     "experience": 12,
     "rating": 5,
-    "description": "Dr. Alice Fabbri graduated from the University of Florence and completed her residency in orthopedic surgery at Florence Orthopedic Hospital. With twelve years of experience, she specializes in sports medicine and joint replacement surgery."
+    "description": "Graduated from the University of Florence, completed residency in orthopedic surgery at Florence Orthopedic Hospital. With twelve years of experience, specializes in sports medicine and joint replacement surgery."
   },
   {
     "id": 15,
@@ -193,7 +192,7 @@
     "patients": 1000,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Matteo Conti graduated from the University of Rome La Sapienza and completed his psychiatry residency at Rome Mental Health Center. With eight years of experience, he specializes in mood disorders and addiction psychiatry."
+    "description": "Completed psychiatry residency at the University of Rome. Eight years of experience, specializes in treating mood disorders and addiction psychiatry."
   },
   {
     "id": 16,
@@ -206,7 +205,7 @@
     "patients": 1200,
     "experience": 9,
     "rating": 5,
-    "description": "Dr. Sara Pellegrini obtained her dermatology degree from the University of Florence. With nine years of experience, she specializes in medical and cosmetic dermatology, including laser treatments and skin surgeries."
+    "description": "Completed dermatology degree from the University of Florence. With nine years of experience, specializes in medical and cosmetic dermatology, including laser treatments and skin surgeries."
   },
   {
     "id": 17,
@@ -219,7 +218,7 @@
     "patients": 950,
     "experience": 7,
     "rating": 4,
-    "description": "Dr. Elisa Rossi graduated from the University of Naples and completed her psychiatry residency at Naples Psychiatric Hospital. With seven years of experience, she specializes in mood disorders and psychotherapy."
+    "description": "Obtained psychiatry degree from the University of Naples. Seven years of experience, specializes in mood disorders and psychotherapy."
   },
   {
     "id": 18,
@@ -232,7 +231,7 @@
     "patients": 1300,
     "experience": 11,
     "rating": 5,
-    "description": "Dr. Andrea Bianchi graduated from the University of Milan and completed his cardiology residency at Milan Heart Institute. With eleven years of experience, he specializes in interventional cardiology and cardiac electrophysiology."
+    "description": "Graduated from the University of Milan, completed cardiology residency at Milan Heart Institute. With eleven years of experience, specializes in interventional cardiology and cardiac electrophysiology."
   },
   {
     "id": 19,
@@ -245,7 +244,7 @@
     "patients": 1000,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Sofia Romano obtained her psychiatry degree from the University of Venice. With eight years of experience, she specializes in cognitive-behavioral therapy and mood disorders."
+    "description": "Obtained psychiatry degree from the University of Venice. Eight years of experience, specializes in cognitive-behavioral therapy and mood disorders."
   },
   {
     "id": 20,
@@ -258,7 +257,7 @@
     "patients": 1100,
     "experience": 10,
     "rating": 5,
-    "description": "Dr. Francesca De Luca graduated from the University of Venice and completed her rheumatology residency at Venice Rheumatology Center. With ten years of experience, she specializes in autoimmune diseases and musculoskeletal disorders."
+    "description": "Graduated from the University of Venice, completed rheumatology residency at Venice Rheumatology Center. With ten years of experience, specializes in autoimmune diseases and musculoskeletal disorders."
   },
   {
     "id": 21,
@@ -271,7 +270,7 @@
     "patients": 1200,
     "experience": 9,
     "rating": 4,
-    "description": "Dr. Giulia Ricci graduated from the University of Rome and completed her cardiology residency at Rome Heart Center. With nine years of experience, she specializes in preventive cardiology and heart failure management."
+    "description": "Graduated from the University of Rome, completed cardiology residency at Rome Heart Center. With nine years of experience, specializes in preventive cardiology and heart failure management."
   },
   {
     "id": 22,
@@ -284,7 +283,7 @@
     "patients": 1300,
     "experience": 11,
     "rating": 5,
-    "description": "Dr. Giovanni Rossi completed his orthopedic surgery residency at Ospedale del Mare in Naples. With over a decade of experience, he specializes in sports injuries and joint replacement surgeries."
+    "description": "Completed orthopedic surgery residency at Ospedale del Mare in Naples. Over a decade of experience, specializes in sports injuries and joint replacement surgeries."
   },
   {
     "id": 23,
@@ -297,7 +296,7 @@
     "patients": 900,
     "experience": 7,
     "rating": 4,
-    "description": "Dr. Mario Greco earned his dermatology degree from the University of Naples Federico II. With seven years of experience, he specializes in cosmetic dermatology and laser treatments."
+    "description": "Earned dermatology degree from the University of Naples Federico II. With seven years of experience, specializes in cosmetic dermatology and laser treatments."
   },
   {
     "id": 24,
@@ -310,7 +309,7 @@
     "patients": 1200,
     "experience": 9,
     "rating": 5,
-    "description": "Dr. Francesca Conti completed her cardiology residency at Careggi University Hospital in Florence. With nine years of experience, she specializes in interventional cardiology and cardiac imaging."
+    "description": "Completed cardiology residency at Careggi University Hospital in Florence. With nine years of experience, specializes in interventional cardiology and cardiac imaging."
   },
   {
     "id": 25,
@@ -323,7 +322,7 @@
     "patients": 1000,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Fabio Galli completed his orthopedic surgery residency at the University of Venice. With eight years of experience, he specializes in arthroscopic surgery and sports medicine."
+    "description": "Completed orthopedic surgery residency at the University of Venice. With eight years of experience, specializes in arthroscopic surgery and sports medicine."
   },
   {
     "id": 26,
@@ -336,7 +335,7 @@
     "patients": 950,
     "experience": 7,
     "rating": 4,
-    "description": "Dr. Salvatore Ferraro obtained his psychiatry degree from the University of Palermo. With seven years of experience, he specializes in mood disorders and addiction psychiatry."
+    "description": "Obtained psychiatry degree from the University of Palermo. With seven years of experience, specializes in mood disorders and addiction psychiatry."
   },
   {
     "id": 27,
@@ -349,7 +348,7 @@
     "patients": 1000,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Paolo Barbieri earned his neurology degree from the University of Genoa. With eight years of experience, he specializes in neurodegenerative disorders and movement disorders."
+    "description": "Earned neurology degree from the University of Genoa. With eight years of experience, specializes in neurodegenerative disorders and movement disorders."
   },
   {
     "id": 28,
@@ -362,7 +361,7 @@
     "patients": 850,
     "experience": 6,
     "rating": 4,
-    "description": "Dr. Laura Galli earned her gynecology degree from the University of Bologna. With six years of experience, she specializes in minimally invasive gynecological surgeries and reproductive endocrinology."
+    "description": "Earned gynecology degree from the University of Bologna. With six years of experience, specializes in minimally invasive gynecological surgeries and reproductive endocrinology."
   },
   {
     "id": 29,
@@ -375,7 +374,7 @@
     "patients": 900,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Alessia Gallo earned her psychiatry degree from the University of Milan. With eight years of experience, she specializes in mood and anxiety disorders, with a focus on psychotherapy."
+    "description": "Earned psychiatry degree from the University of Milan. With eight years of experience, specializes in mood and anxiety disorders, with a focus on psychotherapy."
   },
   {
     "id": 30,
@@ -388,9 +387,8 @@
     "patients": 1200,
     "experience": 9,
     "rating": 5,
-    "description": "Dr. Alice Fabbri completed her orthopedic surgery residency at Careggi University Hospital in Florence. With nine years of experience, she specializes in sports medicine and joint replacement surgeries."
+    "description": "Completed orthopedic surgery residency at Careggi University Hospital in Florence. With nine years of experience, specializes in sports medicine and joint replacement surgeries."
   },
-
   {
     "id": 31,
     "job": "Pediatrician",
@@ -402,7 +400,7 @@
     "patients": 1000,
     "experience": 9,
     "rating": 5,
-    "description": "Dr. Antonio Ferrari graduated from the University of Naples Federico II. With nine years of experience, he specializes in pediatric care and child development."
+    "description": "Graduated from the University of Naples Federico II. With nine years of experience, specializes in pediatric care and child development."
   },
   {
     "id": 32,
@@ -415,7 +413,7 @@
     "patients": 950,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Giorgia Mancini completed her dermatology residency at the University of Rome. With eight years of experience, she specializes in medical and cosmetic dermatology treatments."
+    "description": "Completed dermatology residency at the University of Rome. With eight years of experience, specializes in medical and cosmetic dermatology treatments."
   },
   {
     "id": 33,
@@ -428,7 +426,7 @@
     "patients": 1100,
     "experience": 10,
     "rating": 5,
-    "description": "Dr. Davide De Luca earned his cardiology degree from the University of Naples Federico II. With ten years of experience, he specializes in interventional cardiology and cardiac imaging."
+    "description": "Earned cardiology degree from the University of Naples Federico II. With ten years of experience, specializes in interventional cardiology and cardiac imaging."
   },
   {
     "id": 34,
@@ -441,7 +439,7 @@
     "patients": 1200,
     "experience": 9,
     "rating": 4,
-    "description": "Dr. Sara Pellegrini obtained her dermatology degree from the University of Florence. With nine years of experience, she specializes in medical and surgical dermatology, with a focus on skin cancer detection and treatment."
+    "description": "Completed dermatology degree from the University of Florence. With nine years of experience, specializes in medical and surgical dermatology, with a focus on skin cancer detection and treatment."
   },
   {
     "id": 35,
@@ -454,7 +452,7 @@
     "patients": 1000,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Matteo Conti completed his psychiatry residency at the University of Rome. With eight years of experience, he specializes in treating mood disorders and anxiety."
+    "description": "Completed psychiatry residency at the University of Rome. With eight years of experience, specializes in treating mood disorders and anxiety."
   },
   {
     "id": 36,
@@ -467,7 +465,7 @@
     "patients": 850,
     "experience": 7,
     "rating": 4,
-    "description": "Dr. Luca Riva earned his endocrinology degree from the University of Milan. With seven years of experience, he specializes in hormonal disorders and diabetes management."
+    "description": "Earned endocrinology degree from the University of Milan. With seven years of experience, specializes in hormonal disorders and diabetes management."
   },
   {
     "id": 37,
@@ -480,7 +478,7 @@
     "patients": 900,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Elena Moretti completed her ophthalmology residency at the University of Turin. With eight years of experience, she specializes in cataract surgery and refractive procedures."
+    "description": "Completed ophthalmology residency at the University of Turin. With eight years of experience, specializes in cataract surgery and refractive procedures."
   },
   {
     "id": 38,
@@ -493,7 +491,7 @@
     "patients": 1000,
     "experience": 9,
     "rating": 5,
-    "description": "Dr. Marco Rossi graduated from the University of Bologna with a specialization in gynecology. With nine years of experience, he focuses on reproductive endocrinology and minimally invasive gynecological surgeries."
+    "description": "Graduated from the University of Bologna with a specialization in gynecology. With nine years of experience, focuses on reproductive endocrinology and minimally invasive gynecological surgeries."
   },
   {
     "id": 39,
@@ -506,7 +504,7 @@
     "patients": 950,
     "experience": 8,
     "rating": 4,
-    "description": "Dr. Elena Rizzo earned her neurology degree from the University of Venice. With eight years of experience, she specializes in headache disorders and neuroimmunology."
+    "description": "Earned neurology degree from the University of Venice. With eight years of experience, specializes in headache disorders and neuroimmunology."
   },
   {
     "id": 40,
@@ -519,6 +517,6 @@
     "patients": 1200,
     "experience": 10,
     "rating": 5,
-    "description": "Dr. Alessandro Marini completed his orthopedic surgery residency at Careggi University Hospital in Florence. With ten years of experience, he specializes in trauma surgery and joint reconstruction."
+    "description": "Completed orthopedic surgery residency at Careggi University Hospital in Florence. With ten years of experience, specializes in trauma surgery and joint reconstruction."
   }
 ]

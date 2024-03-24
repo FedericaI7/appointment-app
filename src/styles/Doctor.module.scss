@@ -20,11 +20,13 @@
   }
 }
 
-.main {
+.infoDoctor {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 24px;
+  gap: 6px;
 }
 
 .location {
@@ -35,4 +37,24 @@
 
 .locationIcon {
   color: var(--blue-color);
+}
+
+.boxInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 100px;
+    background-color: var(--white-box);
+    border-radius: 10px;
+  }
 }
