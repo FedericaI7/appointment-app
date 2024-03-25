@@ -1,44 +1,58 @@
-import { useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+import React, { useState } from "react";
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from "@fullcalendar/timegrid";
+import interactionPlugin from "@fullcalendar/interaction";
 
 const CalendarComponent = () => {
-  const [value, onChange] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [isSelectingTime, setIsSelectingTime] = useState(false);
 
-  const isToday = (date) => {
-    const today = new Date();
-    return (
-      date.getDate() === today.getDate() &&
-      date.getMonth() === today.getMonth() &&
-      date.getFullYear() === today.getFullYear()
-    );
+  const handleDateClick = (info) => {
+    const clickedDate = info.date;
+    setSelectedDate(clickedDate);
+    setIsSelectingTime(true);
   };
 
-  const isPastDate = (date) => {
-    const today = new Date();
-    return date < today;
+  const handleSlotClick = (info) => {
+    const clickedTime = info.date;
+    // Do something with the selected date and time
+    console.log("Data e ora selezionate:", selectedDate, clickedTime);
+    // Resetta lo stato per consentire una nuova selezione
+    setSelectedDate(null);
+    setIsSelectingTime(false);
   };
 
-  const tileClassName = ({ date }) => {
-    if (isToday(date)) {
-      return "today";
-    } else if (isPastDate(date)) {
-      return "past";
-    } else {
-      return "future";
-    }
+  const handleBackButtonClick = () => {
+    setIsSelectingTime(false);
   };
+
+  const boh = isSelectingTime ? "timeGridDay" : "dayGridMonth";
 
   return (
-    <>
-      <Calendar
-        onChange={onChange}
-        value={value}
-        // selectRange={true}
-        // tileClassName={tileClassName}
-        maxDetail="month"
+    <div>
+      <FullCalendar
+        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+        initialView={boh}
+        headerToolbar={{
+          start: "title",
+          center: "",
+          end: "today prev,next",
+        }}
+        height={"600px"}
+        events={[]}
+        nowIndicator={true}
+        editable={true}
+        droppable={true}
+        selectable={true}
+        selectMirror={true}
+        dateClick={handleDateClick}
+        select={isSelectingTime ? handleSlotClick : undefined}
       />
-    </>
+      {isSelectingTime && (
+        <button onClick={handleBackButtonClick}>Torna al giorno</button>
+      )}
+    </div>
   );
 };
 

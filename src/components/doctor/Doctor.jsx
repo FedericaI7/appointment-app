@@ -4,14 +4,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Data from "../data";
 
-import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import interactionPlugin, {
-  Draggable,
-  DropArg,
-} from "@fullcalendar/interaction";
-import timeGridPlugin from "@fullcalendar/timegrid";
-
 import { IoIosArrowBack } from "react-icons/io";
 import { GoHeartFill } from "react-icons/go";
 import { TiLocation } from "react-icons/ti";
@@ -21,13 +13,13 @@ import { FaStar } from "react-icons/fa";
 
 import Link from "next/link";
 import Image from "next/image";
-// import CalendarComponent from "../calendar";
+import CalendarComponent from "../calendar";
 
 const Doctor = () => {
   const router = useRouter();
   const { date } = router.query;
   const { id } = router.query;
-  const [isCalendar, setIsCalendar] = useState(false);
+  const [isCalendar, setIsCalendar] = useState(true);
 
   return (
     <Data>
@@ -123,14 +115,7 @@ const Doctor = () => {
                       <p className={styles.bottomInfoPar}>Consultation free</p>
                     </span>
 
-                    <FullCalendar
-                      plugins={[
-                        dayGridPlugin,
-                        interactionPlugin,
-                        timeGridPlugin,
-                      ]}
-                      initialView="dayGridMonth"
-                    />
+                    {isCalendar && <CalendarComponent />}
 
                     <button className={styles.btnAppointment}>
                       Book an Appointment

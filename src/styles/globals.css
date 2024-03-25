@@ -26,3 +26,12 @@ abbr {
   --white-color: #e2dede;
   --white-box: #ebebeb;
 }
+
+.fc-toolbar-title {
+  /* color: pink; */
+  font-size: 16px !important;
+}
+
+.fc-button-primary {
+  cursor: pointer !important;
+}
