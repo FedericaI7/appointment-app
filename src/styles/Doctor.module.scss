@@ -92,7 +92,7 @@
     padding-top: 4px;
   }
 
-  button {
+  .btnAppointment {
     background-color: var(--blue-color);
     color: var(--white-color);
     border: none;
@@ -101,6 +101,12 @@
     font-size: 14px;
     font-weight: bold;
     margin-top: 20px;
+    cursor: pointer;
+  }
+
+  button {
+    font-family: "Merriweather Sans", sans-serif;
+    color: var(--black-color);
     cursor: pointer;
   }
 }

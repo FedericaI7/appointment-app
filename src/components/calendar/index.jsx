@@ -1,2 +1,2 @@
-import Calendar from "react-calendar";
-export default Calendar;
+import CalendarComponent from "./CalendarComponent";
+export default CalendarComponent;

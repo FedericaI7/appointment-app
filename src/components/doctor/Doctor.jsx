@@ -13,6 +13,7 @@ import { FaStar } from "react-icons/fa";
 
 import Link from "next/link";
 import Image from "next/image";
+import CalendarComponent from "../calendar";
 
 const Doctor = () => {
   const router = useRouter();
@@ -113,10 +114,12 @@ const Doctor = () => {
                       <h4>Consultation</h4>
                       <p className={styles.bottomInfoPar}>Consultation free</p>
                     </span>
-                    <span>
-                      <input type="date" />
-                    </span>
-                    <button>Book an Appointment</button>
+
+                    <CalendarComponent />
+
+                    <button className={styles.btnAppointment}>
+                      Book an Appointment
+                    </button>
                   </section>
                 </main>
               </div>
