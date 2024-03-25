@@ -18,6 +18,7 @@ const Doctor = () => {
   const router = useRouter();
   const { date } = router.query;
   const { id } = router.query;
+  const [isCalendar, setIsCalendar] = useState(false);
 
   return (
     <Data>
@@ -70,7 +71,7 @@ const Doctor = () => {
                     {/* --one-- */}
                     <div className={styles.box}>
                       <h5>Patients</h5>
-                      <span>
+                      <span className={styles.iconBox}>
                         <FaPeopleRoof />
                       </span>
                       <p>{dataJson[id - 1].patients}</p>
@@ -78,7 +79,7 @@ const Doctor = () => {
                     {/* ---two-- */}
                     <div className={styles.box}>
                       <h5>Experience</h5>
-                      <span>
+                      <span className={styles.iconBox}>
                         <FaUserDoctor />
                       </span>
                       <p>{dataJson[id - 1].experience + "y"}</p>
@@ -86,7 +87,7 @@ const Doctor = () => {
                     {/* ---three-- */}
                     <div className={styles.box}>
                       <h5>Rating</h5>
-                      <span>
+                      <span className={styles.iconBox}>
                         <FaStar />
                       </span>
                       <p>{dataJson[id - 1].rating}</p>
@@ -96,15 +97,27 @@ const Doctor = () => {
                   <section className={styles.bottomInfo}>
                     <span>
                       <h4>About</h4>
-                      <p>{dataJson[id - 1].description}</p>
+                      <p className={styles.bottomInfoPar}>
+                        {dataJson[id - 1].description}
+                      </p>
+                    </span>
+                    {/* -----AVAIABLE------ */}
+                    <span>
+                      <h4>Avaiable</h4>
+                      <p className={styles.bottomInfoPar}>
+                        Tuesday/Thursday: 9:00/12:30
+                      </p>
                     </span>
                     {/* ---CONSULTATION--- */}
                     <span>
                       <h4>Consultation</h4>
-                      <p>Consultation free</p>
+                      <p className={styles.bottomInfoPar}>Consultation free</p>
                     </span>
+                    <span>
+                      <input type="date" />
+                    </span>
+                    <button>Book an Appointment</button>
                   </section>
-                  <button>Book an Appointment</button>
                 </main>
               </div>
             ))}
