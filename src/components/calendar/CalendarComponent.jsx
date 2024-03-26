@@ -1,59 +1,58 @@
 import React, { useState } from "react";
-import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import timeGridPlugin from "@fullcalendar/timegrid";
-import interactionPlugin from "@fullcalendar/interaction";
 
 const CalendarComponent = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [isSelectingTime, setIsSelectingTime] = useState(false);
+  const [selectedDateTime, setSelectedDateTime] = useState(null);
 
-  const handleDateClick = (info) => {
-    const clickedDate = info.date;
-    setSelectedDate(clickedDate);
-    setIsSelectingTime(true);
+  const handleDateTimeChange = (e) => {
+    const selectedDate = new Date(e.target.value);
+    const currentDate = new Date();
+    //days
+    const disabledDays = [0, 6];
+    //hours
+    const selectedHour = selectedDate.getHours();
+    const minHour = 9;
+    const maxHour = 20;
+
+    if (
+      selectedDate < currentDate ||
+      disabledDays.includes(selectedDate.getDay()) ||
+      selectedHour < minHour ||
+      selectedHour >= maxHour
+    ) {
+      setSelectedDateTime(null);
+    } else {
+      setSelectedDateTime(selectedDate);
+    }
   };
 
-  const handleSlotClick = (info) => {
-    const clickedTime = info.date;
-    // Do something with the selected date and time
-    console.log("Data e ora selezionate:", selectedDate, clickedTime);
-    // Resetta lo stato per consentire una nuova selezione
-    setSelectedDate(null);
-    setIsSelectingTime(false);
+  const handleLogDateTime = () => {
+    console.log("Data e ora selezionate:", selectedDateTime);
   };
-
-  const handleBackButtonClick = () => {
-    setIsSelectingTime(false);
-  };
-
-  const boh = isSelectingTime ? "timeGridDay" : "dayGridMonth";
 
   return (
     <div>
-      <FullCalendar
-        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-        initialView={boh}
-        headerToolbar={{
-          start: "title",
-          center: "",
-          end: "today prev,next",
-        }}
-        height={"600px"}
-        events={[]}
-        nowIndicator={true}
-        editable={true}
-        droppable={true}
-        selectable={true}
-        selectMirror={true}
-        dateClick={handleDateClick}
-        select={isSelectingTime ? handleSlotClick : undefined}
+      <input
+        type="datetime-local"
+        min={getCurrentDateTime()}
+        onChange={handleDateTimeChange}
       />
-      {isSelectingTime && (
-        <button onClick={handleBackButtonClick}>Torna al giorno</button>
-      )}
+      <button onClick={handleLogDateTime} disabled={!selectedDateTime}>
+        Book an Appointment
+      </button>
     </div>
   );
+};
+
+const getCurrentDateTime = () => {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month =
+    now.getMonth() + 1 < 10 ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
+  const day = now.getDate() < 10 ? "0" + now.getDate() : now.getDate();
+  const hours = now.getHours() < 10 ? "0" + now.getHours() : now.getHours();
+  const minutes =
+    now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
+  return `${year}-${month}-${day}T${hours}:${minutes}`;
 };
 
 export default CalendarComponent;
