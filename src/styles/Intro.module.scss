@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--turquoise-color);
+  background-color: var(--light-blue-color);
 
   img {
     width: 25rem;
@@ -19,7 +19,7 @@
 
   h1 {
     font-size: 1.25rem;
-    color: var(--white-color);
+    color: var(--black-color);
   }
 }
 
@@ -30,13 +30,9 @@
   border: none;
   font-weight: bold;
   cursor: pointer;
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: var(--blue-color);
+  color: var(--white-color);
   font-size: 1.125rem;
-
-  &:hover {
-    color: var(--violet-color);
-  }
 }
 
 //startPage

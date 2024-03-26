@@ -41,7 +41,7 @@ export default function Intro() {
               width={100}
               height={100}
               src={`/${imgNext}.svg`}
-              alt="Descrizione dell'immagine"
+              alt="image with Doctors"
             />
             {imgNext === 1 ? (
               <h1>Book your Appointment</h1>

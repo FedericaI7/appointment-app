@@ -4,7 +4,6 @@ import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
 
 import DoctorCardsColumn from "@/components/doctorCardsColumn";
-// import { useState, useEffect } from "react";
 
 export default function DoctorList() {
   return (
