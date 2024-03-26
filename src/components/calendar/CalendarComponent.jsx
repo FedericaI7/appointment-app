@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import styles from "@/styles/Doctor.module.scss";
 
 const CalendarComponent = () => {
   const [selectedDateTime, setSelectedDateTime] = useState(null);
+  const [isBooked, setIsBooked] = useState(false);
 
   const handleDateTimeChange = (e) => {
     const selectedDate = new Date(e.target.value);
     const currentDate = new Date();
-    //days
+    // Giorni
     const disabledDays = [0, 6];
-    //hours
+    // Ore
     const selectedHour = selectedDate.getHours();
     const minHour = 9;
     const maxHour = 20;
@@ -26,19 +28,34 @@ const CalendarComponent = () => {
   };
 
   const handleLogDateTime = () => {
-    console.log("Data e ora selezionate:", selectedDateTime);
+    setIsBooked(true);
   };
 
   return (
-    <div>
-      <input
-        type="datetime-local"
-        min={getCurrentDateTime()}
-        onChange={handleDateTimeChange}
-      />
-      <button onClick={handleLogDateTime} disabled={!selectedDateTime}>
-        Book an Appointment
-      </button>
+    <div className={styles.CalendarComponent}>
+      {!isBooked && (
+        <input
+          className={styles.inputCalendar}
+          type="datetime-local"
+          min={getCurrentDateTime()}
+          onChange={handleDateTimeChange}
+        />
+      )}
+      {!isBooked && (
+        <button
+          className={styles.btnCalendar}
+          onClick={handleLogDateTime}
+          disabled={!selectedDateTime}
+        >
+          Prenota un Appuntamento
+        </button>
+      )}
+      {isBooked && (
+        <p>
+          Thank you for booking your visit. We have sent you a confirmation
+          email.
+        </p>
+      )}
     </div>
   );
 };

@@ -117,9 +117,9 @@ const Doctor = () => {
 
                     {isCalendar && <CalendarComponent />}
 
-                    <button className={styles.btnAppointment}>
+                    {/* <button className={styles.btnAppointment}>
                       Book an Appointment
-                    </button>
+                    </button> */}
                   </section>
                 </main>
               </div>
