@@ -19,7 +19,6 @@ const Doctor = () => {
   const router = useRouter();
   const { date } = router.query;
   const { id } = router.query;
-  const [isCalendar, setIsCalendar] = useState(true);
 
   return (
     <Data>
@@ -114,8 +113,8 @@ const Doctor = () => {
                       <h4>Consultation</h4>
                       <p className={styles.bottomInfoPar}>Consultation free</p>
                     </span>
-
-                    {isCalendar && <CalendarComponent />}
+                    {/* ---CALENDAR--- */}
+                    <CalendarComponent />
                   </section>
                 </main>
               </div>

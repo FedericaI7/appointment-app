@@ -1,12 +1,9 @@
 import Head from "next/head";
 import styles from "@/styles/Intro.module.scss";
-
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
 import DoctorCards from "@/components/doctorCards";
-
 import { FaBell } from "react-icons/fa6";
 import { BsHeartPulseFill } from "react-icons/bs";
 import { FaStethoscope } from "react-icons/fa";
@@ -17,11 +14,22 @@ import { FaHandHoldingMedical } from "react-icons/fa";
 
 export default function Intro() {
   const [imgNext, setImageNext] = useState(1);
-  const [isStartPage, setStartPage] = useState(false);
+  const [showCarousel, setShowCarousel] = useState(true);
+
+  useEffect(() => {
+    // Check if the carousel has been shown before
+    const carouselShown = localStorage.getItem("carouselShown");
+    if (carouselShown) {
+      setShowCarousel(false);
+    }
+  }, []);
 
   const onHandleBtnNext = () => {
     setImageNext((prev) => prev + 1);
-    setStartPage(imgNext === 2);
+    if (imgNext === 2) {
+      localStorage.setItem("carouselShown", "true");
+      setShowCarousel(false);
+    }
   };
 
   return (
@@ -35,7 +43,7 @@ export default function Intro() {
       </Head>
 
       <main className={styles.main}>
-        {!isStartPage && (
+        {showCarousel && (
           <div className={styles.carousel}>
             <Image
               width={100}
@@ -53,7 +61,7 @@ export default function Intro() {
             </button>
           </div>
         )}
-        {isStartPage && (
+        {!showCarousel && (
           <div className={styles.userPage}>
             <nav className={styles.nav}>
               <div>

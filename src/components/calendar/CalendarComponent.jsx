@@ -8,9 +8,9 @@ const CalendarComponent = () => {
   const handleDateTimeChange = (e) => {
     const selectedDate = new Date(e.target.value);
     const currentDate = new Date();
-    // Giorni
+    // days
     const disabledDays = [0, 6];
-    // Ore
+    // hours
     const selectedHour = selectedDate.getHours();
     const minHour = 9;
     const maxHour = 20;
@@ -47,7 +47,7 @@ const CalendarComponent = () => {
           onClick={handleLogDateTime}
           disabled={!selectedDateTime}
         >
-          Prenota un Appuntamento
+          Book Appointment
         </button>
       )}
       {isBooked && (
