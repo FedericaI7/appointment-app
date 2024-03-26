@@ -9,8 +9,8 @@
     background: none;
     border: none;
     text-decoration: underline;
-    font-size: 16px;
-    padding-left: 8px;
+    font-size: 1rem;
+    padding-left: 0.5rem;
     cursor: pointer;
 
     &:hover {
@@ -28,33 +28,33 @@
 }
 
 .mainContainer {
-  padding-top: 100px;
+  padding-top: 6.25rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
 
   h1 {
-    width: 300px;
-    font-size: 30px;
+    width: 18.75rem;
+    font-size: 1.875rem;
     color: var(--black-color);
   }
 }
 
 .faces {
   display: flex;
-  padding-top: 40px;
-  gap: 40px;
+  padding-top: 2.5rem;
+  gap: 2.5rem;
 }
 
 .btnFace {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: var(--white-color);
-  font-size: 34px;
+  font-size: 2.125rem;
   border: none;
   cursor: pointer;
   border-radius: 20%;
@@ -69,8 +69,8 @@
 
 //bottomtext
 .bottomText {
-  padding-top: 100px;
-  width: 300px;
+  padding-top: 6.25rem;
+  width: 18.75rem;
   line-height: 1.5;
   color: var(--white-color);
 }
@@ -80,9 +80,9 @@
   background-color: var(--grey-light-color);
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 2.5rem;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   flex-grow: 1;
   height: 100%;
 
@@ -92,21 +92,21 @@
 }
 
 .iconsContainer {
-  padding-top: 40px;
+  padding-top: 2.5rem;
   display: flex;
-  gap: 50px;
-  font-size: 50px;
+  gap: 3.125rem;
+  font-size: 3.125rem;
   color: var(--black-color);
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .btnBook {
-  width: 200px;
-  height: 60px;
-  font-size: 20px;
+  width: 12.5rem;
+  height: 3.75rem;
+  font-size: 1.25rem;
   border: none;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 
   a {
     color: var(--blue-color);

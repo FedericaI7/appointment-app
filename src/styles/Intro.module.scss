@@ -13,26 +13,26 @@
   background-color: var(--turquoise-color);
 
   img {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--white-color);
   }
 }
 
 .btnNext {
-  margin-top: 30px;
-  padding: 14px 30px;
-  border-radius: 10px;
+  margin-top: 1.875rem;
+  padding: 0.875rem 1.875rem;
+  border-radius: 0.625rem;
   border: none;
   font-weight: bold;
   cursor: pointer;
   background-color: var(--white-color);
   color: var(--black-color);
-  font-size: 18px;
+  font-size: 1.125rem;
 
   &:hover {
     color: var(--violet-color);
@@ -49,26 +49,26 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  gap: 50px;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border-radius: 0.625rem;
+  gap: 3.125rem;
 
   h2 {
-    padding-top: 10px;
+    padding-top: 0.625rem;
   }
 
   p {
-    padding-top: 8px;
-    width: 140px;
+    padding-top: 0.5rem;
+    width: 8.75rem;
   }
 
   button {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     cursor: pointer;
     border: none;
-    padding: 10px 18px;
-    border-radius: 8px;
+    padding: 0.625rem 1.125rem;
+    border-radius: 0.5rem;
     font-weight: bold;
   }
 }
@@ -78,7 +78,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 30px 16px 30px;
+  padding: 1.875rem 1.875rem 1rem 1.875rem;
 
   p {
     padding-top: 6px;
@@ -87,28 +87,28 @@
 
 .icon {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   overflow-x: scroll;
 
   a {
     color: white;
   }
-  padding: 10px 30px 16px 30px;
-  font-size: 50px;
+  padding: 0.625rem 1.875rem 1rem 1.875rem;
+  font-size: 3.125rem;
 
   .boxIcon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
-    width: 120px;
+    width: 7.5rem;
     background-color: #4780d7;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
   }
 
   p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }

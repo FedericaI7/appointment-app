@@ -1,12 +1,12 @@
 .DoctorCardsColumn {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .boxCardColumn {
@@ -15,15 +15,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
-  padding: 20px;
-  width: 180px;
-  height: 290px;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  width: 11.25rem;
+  height: 18.125rem;
 
   img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     object-fit: cover;
     filter: saturate(180%);
     filter: grayscale(110%);
@@ -34,7 +34,7 @@
   text-align: center;
 
   h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--black-color);
   }
 
@@ -43,36 +43,36 @@
     justify-content: center;
     align-items: center;
     background-color: var(--grey-light-color);
-    border-radius: 10px;
-    width: 50px;
+    border-radius: 0.625rem;
+    width: 3.125rem;
     margin: 0 auto;
-    height: 30px;
-    margin-top: 10px;
+    height: 1.875rem;
+    margin-top: 0.625rem;
 
     cursor: pointer;
   }
 
   .job {
-    padding-top: 5px;
-    font-size: 14px;
+    padding-top: 0.3125rem;
+    font-size: 0.875rem;
   }
 
   .city {
-    padding-top: 8px;
-    font-size: 12px;
+    padding-top: 0.5rem;
+    font-size: 0.75rem;
     color: var(--black-color);
   }
 
   button {
-    width: 160px;
-    height: 30px;
-    margin-top: 10px;
+    width: 10rem;
+    height: 1.875rem;
+    margin-top: 0.625rem;
     background-color: var(--blue-color);
     color: #ebebeb;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
   }
 }

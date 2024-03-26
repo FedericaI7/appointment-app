@@ -116,10 +116,6 @@ const Doctor = () => {
                     </span>
 
                     {isCalendar && <CalendarComponent />}
-
-                    {/* <button className={styles.btnAppointment}>
-                      Book an Appointment
-                    </button> */}
                   </section>
                 </main>
               </div>
