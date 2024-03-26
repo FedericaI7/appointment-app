@@ -97,14 +97,14 @@ export default function Home() {
         {(faceState.isFaceMeh || faceState.isFaceFrown) && (
           <div className={styles.resultFace}>
             <h3>Book an appointment</h3>
-            {/* <hr /> */}
+
             <div className={styles.iconsContainer}>
               <FaUserDoctor />
               <RiPsychotherapyFill />
             </div>
-            <button className={styles.btnBook}>
+            <div className={styles.btnBook}>
               <Link href="/intro">Book now</Link>
-            </button>
+            </div>
           </div>
         )}
       </main>

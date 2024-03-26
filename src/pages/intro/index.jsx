@@ -3,12 +3,11 @@ import styles from "@/styles/Intro.module.scss";
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-
-import { FaBell } from "react-icons/fa6";
-
-import DoctorCards from "@/components/doctorCards";
 import Link from "next/link";
 
+import DoctorCards from "@/components/doctorCards";
+
+import { FaBell } from "react-icons/fa6";
 import { BsHeartPulseFill } from "react-icons/bs";
 import { FaStethoscope } from "react-icons/fa";
 import { RiPsychotherapyFill } from "react-icons/ri";
@@ -18,7 +17,7 @@ import { FaHandHoldingMedical } from "react-icons/fa";
 
 export default function Intro() {
   const [imgNext, setImageNext] = useState(1);
-  const [isStartPage, setStartPage] = useState(true);
+  const [isStartPage, setStartPage] = useState(false);
 
   const onHandleBtnNext = () => {
     setImageNext((prev) => prev + 1);
@@ -36,7 +35,7 @@ export default function Intro() {
       </Head>
 
       <main className={styles.main}>
-        {/* {!isStartPage && (
+        {!isStartPage && (
           <div className={styles.carousel}>
             <Image
               width={100}
@@ -53,7 +52,7 @@ export default function Intro() {
               Next
             </button>
           </div>
-        )} */}
+        )}
         {isStartPage && (
           <div className={styles.userPage}>
             <nav className={styles.nav}>
