@@ -1,9 +1,10 @@
-import React from "react";
-import Data from "../data";
 import styles from "@/styles/DoctorCardsColumn.module.scss";
 import Image from "next/image";
-import { PiPhoneCallFill } from "react-icons/pi";
 import { useRouter } from "next/router";
+
+import Data from "../data";
+
+import { PiPhoneCallFill } from "react-icons/pi";
 
 const DoctorCardsColumn = () => {
   const router = useRouter();
@@ -16,7 +17,6 @@ const DoctorCardsColumn = () => {
 
   const onHandleBtnAppointment = (name, date, id) => {
     router.push(`/doctorList/${name}?date=${date}&id=${id}`);
-    // console.log(id);
   };
 
   return (

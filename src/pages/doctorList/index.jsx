@@ -1,10 +1,10 @@
 import styles from "@/styles/DoctorList.module.scss";
 import Head from "next/head";
-
-import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
 
 import DoctorCardsColumn from "@/components/doctorCardsColumn";
+
+import { IoIosArrowBack } from "react-icons/io";
 
 export default function DoctorList() {
   return (
@@ -17,7 +17,7 @@ export default function DoctorList() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.DoctorList}>
+      <main className={styles.DoctorList}>
         <nav className={styles.navTitle}>
           <span className={styles.iconBack}>
             <Link href="/intro">
@@ -29,7 +29,7 @@ export default function DoctorList() {
           </div>
         </nav>
         <DoctorCardsColumn />
-      </div>
+      </main>
     </>
   );
 }

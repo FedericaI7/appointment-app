@@ -2,9 +2,6 @@ import styles from "@/styles/DoctorList.module.scss";
 import Head from "next/head";
 import Doctor from "@/components/doctor";
 
-import { IoIosArrowBack } from "react-icons/io";
-import Link from "next/link";
-
 export default function DoctorListDynamic() {
   return (
     <>

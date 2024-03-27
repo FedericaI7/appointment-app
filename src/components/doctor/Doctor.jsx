@@ -1,8 +1,10 @@
 import styles from "@/styles/Doctor.module.scss";
-
-import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
+
 import Data from "../data";
+import CalendarComponent from "../calendar";
 
 import { IoIosArrowBack } from "react-icons/io";
 import { GoHeartFill } from "react-icons/go";
@@ -10,10 +12,6 @@ import { TiLocation } from "react-icons/ti";
 import { FaPeopleRoof } from "react-icons/fa6";
 import { FaUserDoctor } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
-
-import Link from "next/link";
-import Image from "next/image";
-import CalendarComponent from "../calendar";
 
 const Doctor = () => {
   const router = useRouter();
