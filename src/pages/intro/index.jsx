@@ -22,6 +22,17 @@ export default function Intro() {
     if (carouselShown) {
       setShowCarousel(false);
     }
+
+    // Cleanup localStorage on page unload
+    const cleanupLocalStorage = () => {
+      localStorage.removeItem("carouselShown");
+    };
+
+    window.addEventListener("beforeunload", cleanupLocalStorage);
+
+    return () => {
+      window.removeEventListener("beforeunload", cleanupLocalStorage);
+    };
   }, []);
 
   const onHandleBtnNext = () => {
