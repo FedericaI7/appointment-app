@@ -11,11 +11,6 @@ a {
   text-decoration: none;
 }
 
-abbr {
-  text-decoration: none;
-  border-bottom: none;
-}
-
 :root {
   --pink-red-color: #e05263;
   --turquoise-color: #1dbab5;
@@ -25,13 +20,4 @@ abbr {
   --light-blue-color: #9bb4dc;
   --white-color: #e2dede;
   --white-box: #ebebeb;
-}
-
-.fc-toolbar-title {
-  /* color: pink; */
-  font-size: 16px !important;
-}
-
-.fc-button-primary {
-  cursor: pointer !important;
 }

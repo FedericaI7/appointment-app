@@ -2,7 +2,7 @@ Fasi:
 
 <!-- aggiungere carousel con professioni in Intro  -->
 
-aggiungere al click del carousel pagina con professionisti per settore
+<!-- aggiungere al click del carousel pagina con professionisti per settore -->
 
 <!-- aggiungere pagina personale dottore -->
 <!-- aggiungere calendario a pagina personale -->

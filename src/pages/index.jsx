@@ -1,15 +1,15 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.scss";
+import { useState } from "react";
+import Link from "next/link";
+
+import FormRegister from "@/components/formRegister/FormRegister";
 
 import { CiFaceSmile } from "react-icons/ci";
 import { CiFaceMeh } from "react-icons/ci";
 import { CiFaceFrown } from "react-icons/ci";
-
 import { FaUserDoctor } from "react-icons/fa6";
 import { RiPsychotherapyFill } from "react-icons/ri";
-
-import { useState } from "react";
-import Link from "next/link";
 
 export default function Home() {
   const [faceState, setFaceState] = useState({
@@ -17,6 +17,7 @@ export default function Home() {
     isFaceMeh: false,
     isFaceFrown: false,
     isBottomTextVisible: true,
+    isSignUpVisible: false,
   });
 
   const handleFace = (face) => {
@@ -25,6 +26,12 @@ export default function Home() {
       isFaceMeh: face === "meh",
       isFaceFrown: face === "frown",
       isBottomTextVisible: false,
+    });
+  };
+
+  const handleSignUp = () => {
+    setFaceState({
+      isSignUpVisible: true,
     });
   };
 
@@ -43,11 +50,14 @@ export default function Home() {
           <p>
             Already have an account?
             <span className={styles.signIn}>
-              <button> Sign in</button> <button>Sign Up</button>
+              <button> Sign in</button>{" "}
+              <button onClick={handleSignUp}>Sign Up</button>
             </span>
           </p>
         </div>
       </nav>
+      {/* ---FORM---- */}
+      {faceState.isSignUpVisible && <FormRegister />}
       {/* ----MAIN--- */}
       <main className={styles.main}>
         <div className={styles.mainContainer}>

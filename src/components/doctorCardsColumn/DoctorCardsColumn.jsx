@@ -30,7 +30,8 @@ const DoctorCardsColumn = () => {
             {results && // Utilizzo di results direttamente
               dataJson &&
               results.map((el, index) => {
-                const genderColor = el.gender === "male" ? "#a8dcd9" : "pink";
+                const genderColor =
+                  el.gender === "male" ? "#1dbab5" : "#e05263";
                 return (
                   <div className={styles.boxCardColumn} key={index}>
                     <div>
