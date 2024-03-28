@@ -85,19 +85,12 @@ export default function Intro() {
               </div>
             </nav>
             <div className={styles.boxCard}>
-              <div>
+              <div className={styles.textBoxCard}>
                 <h2>Stay at Home!</h2>
                 <p>Take care of your health</p>
                 <button>Meet online</button>
               </div>
-              <div>
-                <Image
-                  src="/doctors.svg"
-                  width={100}
-                  height={100}
-                  alt="doctors"
-                />
-              </div>
+              <div className={styles.imgBoxCard}></div>
             </div>
             {/* -----OUR SERVICES----- */}
             <div className={styles.nextAppointments}>
