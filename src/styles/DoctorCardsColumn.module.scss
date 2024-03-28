@@ -17,12 +17,12 @@
   border-radius: 0.625rem;
   padding: 1.25rem;
   width: 11.25rem;
-  height: 320px;
+  height: 21.25rem;
 
   img {
     border-radius: 50%;
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 7.5rem;
+    height: 7.5rem;
     object-fit: cover;
     filter: saturate(180%);
     filter: grayscale(110%);
@@ -33,7 +33,7 @@
   text-align: center;
 
   h3 {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: var(--black-color);
   }
 
@@ -58,7 +58,7 @@
 
   .city {
     padding-top: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: var(--black-color);
   }
 
@@ -67,8 +67,8 @@
     height: 1.875rem;
     margin-top: 0.625rem;
     background-color: var(--blue-color);
-    color: #ebebeb;
-    font-size: 0.875rem;
+    color: var(--white-box);
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 0.625rem;

@@ -73,6 +73,10 @@
     p {
       font-size: 0.875rem;
     }
+
+    h5 {
+      font-size: 16px;
+    }
   }
 }
 
@@ -85,10 +89,12 @@
 
   h4 {
     padding-top: 0.875rem;
+    font-size: 18px;
   }
 
   .bottomInfoPar {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.5;
     padding-top: 0.25rem;
   }
 }

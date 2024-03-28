@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styles from "@/styles/Doctor.module.scss";
 
-const CalendarComponent = () => {
+const CalendarComponent = ({ isBooked, setIsBooked }) => {
   const [selectedDateTime, setSelectedDateTime] = useState(null);
-  const [isBooked, setIsBooked] = useState(false);
 
   const handleDateTimeChange = (e) => {
     const selectedDate = new Date(e.target.value);

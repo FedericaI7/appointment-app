@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import DoctorCards from "@/components/doctorCards";
+import { isBooked } from "@/components/calendar/CalendarComponent";
 import { FaBell } from "react-icons/fa6";
 import { BsHeartPulseFill } from "react-icons/bs";
 import { FaStethoscope } from "react-icons/fa";
@@ -86,7 +87,7 @@ export default function Intro() {
             <div className={styles.boxCard}>
               <div>
                 <h2>Stay at Home!</h2>
-                <p>Take care of your mental health</p>
+                <p>Take care of your health</p>
                 <button>Meet online</button>
               </div>
               <div>
@@ -136,6 +137,8 @@ export default function Intro() {
                 </Link>
               </div>
             </div>
+
+            {isBooked && <p>Complimenti per aver prenotato</p>}
 
             {/* //---Next appointments--- */}
             <div className={styles.nextAppointments}>

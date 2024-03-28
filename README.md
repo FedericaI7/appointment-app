@@ -7,11 +7,16 @@ Fasi:
 <!-- aggiungere pagina personale dottore -->
 <!-- aggiungere calendario a pagina personale -->
 
-aggiungere form in ingresso per login ecc
-modificare pagina home e slider
+<!-- aggiungere form in ingresso per login ecc -->
+
+<!-- modificare pagina home e slider -->
+
 sotto hi user mettere barra di ricerca dottore
 sezione messaggi
 chatbot
 reminder medicine
-meta-tag /seo tag
-px to rem
+reminder appuntamento
+versione Desktop?
+
+<!-- meta-tag /seo tag -->
+<!-- px to rem -->

@@ -2,6 +2,7 @@ import styles from "@/styles/Doctor.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 import Data from "../data";
 import CalendarComponent from "../calendar";
@@ -17,6 +18,7 @@ const Doctor = () => {
   const router = useRouter();
   const { date } = router.query;
   const { id } = router.query;
+  const [isBooked, setIsBooked] = useState(false);
 
   return (
     <Data>
@@ -112,7 +114,10 @@ const Doctor = () => {
                       <p className={styles.bottomInfoPar}>Consultation free</p>
                     </span>
                     {/* ---CALENDAR--- */}
-                    <CalendarComponent />
+                    <CalendarComponent
+                      isBooked={isBooked}
+                      setIsBooked={setIsBooked}
+                    />
                   </section>
                 </main>
               </div>
