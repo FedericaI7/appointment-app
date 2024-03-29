@@ -39,8 +39,8 @@
 
 .infoBoxText {
   padding-top: 0.625rem;
-
   width: 18.75rem;
+
   h3 {
     font-size: 1rem;
     color: var(--black-color);
@@ -53,7 +53,7 @@
     border-radius: 1rem;
     padding: 0.625rem;
     cursor: pointer;
-    color: #ebebeb;
+    color: var(--white-box);
   }
 
   .city {
@@ -76,7 +76,45 @@
 
 // ---MEDIA QUERY----
 @media screen and (min-width: 768px) {
+  .DoctorCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
   .boxCard {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 1.625rem;
+
+    button {
+      margin-top: 2.5rem;
+    }
+
+    .callToAction {
+      gap: 0.625rem;
+      display: block;
+    }
+    .infoBoxText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 11.25rem;
+
+      .telIcon {
+        margin-top: 0.875rem;
+        justify-content: center;
+      }
+
+      .city {
+        padding-bottom: 0.625rem;
+      }
+    }
   }
 }
