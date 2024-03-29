@@ -9,7 +9,7 @@
 }
 
 .boxCardColumn {
-  background-color: var(--white-box);
+  background-color: var(--white-box-two);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,5 +73,17 @@
     border: none;
     border-radius: 0.625rem;
     cursor: pointer;
+  }
+}
+
+// ---MEDIA QUERY----
+@media screen and (min-width: 768px) {
+  .DoctorCardsColumn {
+    gap: 3.75rem;
+  }
+
+  .boxCardColumn {
+    width: 15rem;
+    padding: 1.625rem;
   }
 }
