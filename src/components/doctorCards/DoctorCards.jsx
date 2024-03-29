@@ -1,10 +1,7 @@
 import styles from "@/styles/DoctorCard.module.scss";
-
 import Image from "next/image";
-import { userData } from "@/API/Apicall";
-import { useState, useEffect } from "react";
-import { PiPhoneCallFill } from "react-icons/pi";
 import Data from "../data";
+import { PiPhoneCallFill } from "react-icons/pi";
 
 const DoctorCards = () => {
   const onHandleCall = (phone) => {

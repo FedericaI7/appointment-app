@@ -87,7 +87,9 @@ export default function Intro() {
             <div className={styles.boxCard}>
               <div className={styles.textBoxCard}>
                 <h2>Stay at Home!</h2>
-                <p>Take care of your health</p>
+                <p>
+                  Choose among the top doctors and schedule your appointment!
+                </p>
                 <button>Meet online</button>
               </div>
               <div className={styles.imgBoxCard}></div>
@@ -108,30 +110,33 @@ export default function Intro() {
                   <BsHeartPulseFill />
                   <p>Cardiologist</p>
                 </Link>
+
                 <Link href="/doctorList" className={styles.boxIcon}>
                   <FaStethoscope />
                   <p>Pediatrician</p>
                 </Link>
+
                 <Link href="/doctorList" className={styles.boxIcon}>
                   <RiPsychotherapyFill />
                   <p>Psychiatrist</p>
                 </Link>
+
                 <Link href="/doctorList" className={styles.boxIcon}>
                   <GiBarefoot />
                   <p>Orthopedic Surgeon</p>
                 </Link>
+
                 <Link href="/doctorList" className={styles.boxIcon}>
                   <GiBrain />
                   <p>Neurologist</p>
                 </Link>
+
                 <Link href="/doctorList" className={styles.boxIcon}>
                   <FaHandHoldingMedical />
                   <p>Dermatologist</p>
                 </Link>
               </div>
             </div>
-
-            {isBooked && <p>Complimenti per aver prenotato</p>}
 
             {/* //---Next appointments--- */}
             <div className={styles.nextAppointments}>
