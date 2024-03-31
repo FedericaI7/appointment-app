@@ -58,9 +58,9 @@ export default function Intro() {
         {showCarousel && (
           <div className={styles.carousel}>
             <Image
-              width={100}
-              height={100}
-              src={`/${imgNext}.svg`}
+              width={1000}
+              height={1000}
+              src={`/${imgNext}.jpeg`}
               alt="image with Doctors"
             />
             {imgNext === 1 ? (

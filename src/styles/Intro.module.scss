@@ -15,12 +15,13 @@
   background-color: var(--light-blue-color);
 
   img {
-    width: 25rem;
-    height: 25rem;
+    width: 37.5rem;
+    height: auto;
   }
 
   h1 {
     font-size: 1.25rem;
+    padding-top: 1.25rem;
     color: var(--black-color);
   }
 }
@@ -124,6 +125,10 @@
 ///
 ///
 @media screen and (min-width: 768px) {
+  .nav {
+    padding: 1.875rem 2.5rem 2.5rem 2.5rem;
+  }
+
   .boxCard {
     flex-direction: row-reverse;
     align-items: center;
