@@ -35,6 +35,12 @@ export default function Home() {
     });
   };
 
+  const handleMusic = () => {
+    const audio = new Audio("/soundEffect.mp3");
+    audio.volume = 0.1;
+    audio.play();
+  };
+
   return (
     <>
       <Head>
@@ -113,7 +119,9 @@ export default function Home() {
               <RiPsychotherapyFill />
             </div>
             <div className={styles.btnBook}>
-              <Link href="/intro">Book now</Link>
+              <Link onClick={handleMusic} href="/intro">
+                Book now
+              </Link>
             </div>
           </div>
         )}
