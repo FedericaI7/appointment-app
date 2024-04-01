@@ -32,8 +32,8 @@
     width: 8.75rem;
     height: 7.5rem;
     object-fit: cover;
-    filter: saturate(180%);
-    filter: grayscale(110%);
+    // filter: saturate(180%);
+    // filter: grayscale(110%);
   }
 }
 
@@ -49,7 +49,7 @@
   .telIcon {
     display: flex;
     align-items: center;
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
     border-radius: 1rem;
     padding: 0.625rem;
     cursor: pointer;
@@ -69,7 +69,7 @@
 
     .dateAppointment {
       font-size: 0.875rem;
-      color: var(--blue-color);
+      color: var(--green-color);
     }
   }
 }

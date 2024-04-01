@@ -24,8 +24,8 @@
     width: 7.5rem;
     height: 7.5rem;
     object-fit: cover;
-    filter: saturate(180%);
-    filter: grayscale(110%);
+    // filter: saturate(180%);
+    // filter: grayscale(110%);
   }
 }
 
@@ -66,9 +66,9 @@
     width: 10rem;
     height: 1.875rem;
     margin-top: 0.625rem;
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
     color: var(--white-box);
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: bold;
     border: none;
     border-radius: 0.625rem;
@@ -85,5 +85,10 @@
   .boxCardColumn {
     width: 15rem;
     padding: 1.625rem;
+  }
+  .infoBoxText {
+    button {
+      font-size: 1rem;
+    }
   }
 }

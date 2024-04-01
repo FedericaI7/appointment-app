@@ -39,10 +39,11 @@ const Doctor = () => {
                   </span>
                   <div className={styles.titleCenter}>
                     <Image
-                      width={100}
-                      height={100}
+                      width={1000}
+                      height={1000}
                       alt={`${el.name.first} ${el.name.last}`}
-                      src={el.picture?.large}
+                      // src={el.picture?.large}
+                      src={dataJson[id - 1]?.image}
                     />
                   </div>
                   <span className={styles.heartIcon}>

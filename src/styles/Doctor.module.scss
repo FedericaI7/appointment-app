@@ -24,8 +24,8 @@
 
 .titleCenter {
   img {
-    width: 8.75rem;
-    height: 8.75rem;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
   }
 }
@@ -46,7 +46,7 @@
 }
 
 .locationIcon {
-  color: var(--blue-color);
+  color: var(--green-color);
 }
 
 .boxInfo {
@@ -68,7 +68,7 @@
     border-radius: 0.625rem;
 
     .iconBox {
-      color: var(--blue-color);
+      color: var(--green-color);
     }
 
     p {
@@ -88,10 +88,15 @@
   width: 100%;
   padding-bottom: 1.25rem;
   padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  background-color: var(--turquoise-color);
+  border-radius: 0.625rem;
+  color: var(--white-box);
 
   h4 {
     padding-top: 0.875rem;
     font-size: 1.375rem;
+    color: var(--white-color);
   }
 
   .bottomInfoPar {
@@ -122,14 +127,14 @@
   padding: 1.875rem;
   font-size: 0.9375rem;
   cursor: pointer;
-  color: var(--blue-color);
+  color: var(--green-color);
   border: none;
   background-color: var(--white-box);
 }
 
 .btnCalendar {
-  background-color: var(--blue-color);
-  color: var(--white-color);
+  background-color: var(--white-color);
+  color: var(--face-color);
   border: none;
   border-radius: 0.625rem;
   padding: 0.875rem;
@@ -146,6 +151,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-left: 0rem;
 
     h4 {
       font-size: 1.5rem;

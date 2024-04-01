@@ -22,9 +22,10 @@ const DoctorCards = () => {
                 <div className={styles.boxCard} key={index}>
                   <div>
                     <Image
-                      src={el.picture?.large}
-                      width={100}
-                      height={100}
+                      // src={el.picture?.large}
+                      src={dataJson[index]?.image}
+                      width={1000}
+                      height={1000}
                       alt="doctor picture"
                     />
                   </div>

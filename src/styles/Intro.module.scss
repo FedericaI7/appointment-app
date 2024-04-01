@@ -33,7 +33,7 @@
   border: none;
   font-weight: bold;
   cursor: pointer;
-  background-color: var(--blue-color);
+  background-color: var(--green-color);
   color: var(--white-color);
   font-size: 1.125rem;
 }
@@ -44,19 +44,18 @@
 }
 
 .boxCard {
-  // background-color: var(--light-blue-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient((rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2))),
     url("/smiledoc4.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 1.25rem;
   height: 80vh;
   border-radius: 0.625rem;
-  // gap: 50px;
 
   h2 {
     padding-top: 0.625rem;
@@ -65,9 +64,9 @@
 
   p {
     color: var(--white-color);
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding-top: 0.5rem;
-    width: 8.75rem;
+    // width: 8.75rem;
   }
 
   button {
@@ -77,16 +76,7 @@
     padding: 0.625rem 1.125rem;
     border-radius: 0.5rem;
     font-weight: bold;
-  }
-
-  .imgBoxCard {
-    // border-radius: 10px;
-    // width: 25rem;
-    // height: 6.25rem;
-    // width: 240px;
-    // height: 300px;
-    // background-repeat: no-repeat;
-    // background-size: contain;
+    font-size: 1rem;
   }
 }
 

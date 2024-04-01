@@ -10,8 +10,8 @@
   position: absolute;
   font-size: 1rem;
   font-weight: bold;
-  background-color: var(--light-blue-color);
-  color: var(--black-color);
+  background-color: var(--face-color);
+  color: var(--white-color);
   padding: 3.125rem;
   height: 25rem;
   width: 25rem;
@@ -35,14 +35,14 @@
   border: none;
   background-color: var(--white-color);
   border-radius: 0.5rem;
-  color: var(--blue-color);
+  color: var(--green-color);
   cursor: pointer;
 }
 
 .btnClose {
   position: relative;
-  top: 14px;
-  left: 150px;
+  top: 0.875rem;
+  left: 9.375rem;
   font-size: 1.5rem;
   background-color: transparent;
   cursor: pointer;
