@@ -27,7 +27,6 @@ const Doctor = () => {
         const findDoctor = results?.filter(
           (el) => el.registered?.date === date
         );
-
         return (
           <div className={styles.Doctor}>
             {findDoctor?.map((el, index) => (
@@ -95,21 +94,21 @@ const Doctor = () => {
                   </section>
                   {/* ----ABOUT------- */}
                   <section className={styles.bottomInfo}>
-                    <span>
+                    <span className={styles.info}>
                       <h4>About</h4>
                       <p className={styles.bottomInfoPar}>
                         {dataJson[id - 1].description}
                       </p>
                     </span>
                     {/* -----AVAIABLE------ */}
-                    <span>
+                    <span className={styles.info}>
                       <h4>Avaiable</h4>
                       <p className={styles.bottomInfoPar}>
                         Tuesday/Thursday: 9:00/12:30
                       </p>
                     </span>
                     {/* ---CONSULTATION--- */}
-                    <span>
+                    <span className={styles.info}>
                       <h4>Consultation</h4>
                       <p className={styles.bottomInfoPar}>Consultation free</p>
                     </span>

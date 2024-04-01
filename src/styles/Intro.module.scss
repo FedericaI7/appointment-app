@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 100%;
   height: 100vh;
-  max-width: 112.5rem;
+  max-width: 1800px;
 }
 
 .carousel {
@@ -15,7 +15,7 @@
   background-color: var(--light-blue-color);
 
   img {
-    width: 37.5rem;
+    max-width: 100%;
     height: auto;
   }
 
@@ -44,19 +44,27 @@
 }
 
 .boxCard {
-  background-color: var(--light-blue-color);
+  // background-color: var(--light-blue-color);
+  background: linear-gradient((rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2))),
+    url("/smiledoc4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1.25rem;
+  height: 80vh;
   border-radius: 0.625rem;
-  gap: 3.125rem;
+  // gap: 50px;
 
   h2 {
     padding-top: 0.625rem;
+    color: var(--white-color);
   }
 
   p {
+    color: var(--white-color);
     font-size: 0.875rem;
     padding-top: 0.5rem;
     width: 8.75rem;
@@ -72,11 +80,13 @@
   }
 
   .imgBoxCard {
-    background: url("/doctors.svg");
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // border-radius: 10px;
+    // width: 25rem;
+    // height: 6.25rem;
+    // width: 240px;
+    // height: 300px;
+    // background-repeat: no-repeat;
+    // background-size: contain;
   }
 }
 
@@ -88,7 +98,7 @@
   padding: 1.875rem 1.875rem 1rem 1.875rem;
 
   p {
-    padding-top: 6px;
+    padding-top: 0.375rem;
   }
 }
 
@@ -111,7 +121,7 @@
     gap: 0.625rem;
     align-items: center;
     width: 7.5rem;
-    background-color: #4780d7;
+    background-color: #4c8888;
     padding: 0.625rem;
     border-radius: 0.625rem;
   }
@@ -125,6 +135,13 @@
 ///
 ///
 @media screen and (min-width: 768px) {
+  .carousel {
+    img {
+      width: 37.5rem;
+      height: auto;
+    }
+  }
+
   .nav {
     padding: 1.875rem 2.5rem 2.5rem 2.5rem;
   }
@@ -133,8 +150,9 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    gap: 0px;
-    height: 60vh;
+    height: 75vh;
+    // gap: 40px;
+    // height: 60vh;
 
     h2 {
       font-size: 1.625rem;
@@ -147,9 +165,9 @@
       margin-top: 1.625rem;
       cursor: pointer;
       border: none;
-      padding: 14px 24px;
+      padding: 0.875rem 1.5rem;
       border-radius: 0.5rem;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: bold;
     }
 
@@ -161,11 +179,15 @@
     }
 
     .imgBoxCard {
-      background: url("/doc.svg");
-      width: 25rem;
-      height: 40vh;
-      background-size: contain;
-      background-repeat: no-repeat;
+      // background: url("/smiledoc.jpeg");
+      // align-items: normal;
+      // height: 200px;
+      // width: 400px;
+      // width: 100%;
+      // width: 80%;
+      // height: 90vh;
+      // background-size: contain;
+      // background-repeat: no-repeat;
     }
   }
 
@@ -182,8 +204,8 @@
     }
 
     .boxIcon {
-      width: 280px;
-      height: 120px;
+      width: 17.5rem;
+      height: 7.5rem;
     }
   }
 }

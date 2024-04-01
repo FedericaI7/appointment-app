@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { userData } from "@/API/Apicall";
 
-
-
 const Data = ({ children }) => {
   const [user, setUser] = useState({});
   const [dataJson, setDataJson] = useState();
