@@ -1,9 +1,9 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.scss";
+import styles from ".././styles/Home.module.scss";
 import { useState } from "react";
 import Link from "next/link";
 
-import FormRegister from "@/components/formRegister/FormRegister";
+import FormRegister from "../components/formRegister/FormRegister";
 
 import { CiFaceSmile } from "react-icons/ci";
 import { CiFaceMeh } from "react-icons/ci";

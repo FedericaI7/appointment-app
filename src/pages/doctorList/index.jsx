@@ -1,8 +1,8 @@
-import styles from "@/styles/DoctorList.module.scss";
+import styles from "../../styles/DoctorList.module.scss";
 import Head from "next/head";
 import Link from "next/link";
 
-import DoctorCardsColumn from "@/components/doctorCardsColumn";
+import DoctorCardsColumn from "../../components/doctorCardsColumn/DoctorCardsColumn";
 
 import { IoIosArrowBack } from "react-icons/io";
 

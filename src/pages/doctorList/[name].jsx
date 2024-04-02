@@ -1,6 +1,6 @@
-import styles from "@/styles/DoctorList.module.scss";
+import styles from "../../styles/DoctorList.module.scss";
 import Head from "next/head";
-import Doctor from "@/components/doctor";
+import Doctor from "../../components/doctor";
 
 export default function DoctorListDynamic() {
   return (

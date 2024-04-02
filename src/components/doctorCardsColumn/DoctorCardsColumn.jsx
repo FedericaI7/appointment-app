@@ -1,4 +1,4 @@
-import styles from "@/styles/DoctorCardsColumn.module.scss";
+import styles from "../../styles/DoctorCardsColumn.module.scss";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -40,6 +40,7 @@ const DoctorCardsColumn = () => {
                         src={dataJson[index]?.image}
                         width={1000}
                         height={1000}
+                        priority
                         alt="doctor picture"
                       />
                     </div>

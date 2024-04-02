@@ -1,4 +1,4 @@
-import styles from "@/styles/FormRegister.module.scss";
+import styles from "../../styles/FormRegister.module.scss";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 

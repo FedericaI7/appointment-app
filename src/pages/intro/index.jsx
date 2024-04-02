@@ -1,10 +1,10 @@
 import Head from "next/head";
-import styles from "@/styles/Intro.module.scss";
+import styles from "../../styles/Intro.module.scss";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import DoctorCards from "@/components/doctorCards";
-import { isBooked } from "@/components/calendar/CalendarComponent";
+import DoctorCards from "../../components/doctorCards/DoctorCards";
+
 import { FaBell } from "react-icons/fa6";
 import { BsHeartPulseFill } from "react-icons/bs";
 import { FaStethoscope } from "react-icons/fa";
@@ -62,6 +62,7 @@ export default function Intro() {
               height={1000}
               src={`/${imgNext}.jpeg`}
               alt="image with Doctors"
+              priority
             />
             {imgNext === 1 ? (
               <h1>Book your Appointment</h1>

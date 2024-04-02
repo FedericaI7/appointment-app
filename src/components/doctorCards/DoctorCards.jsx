@@ -1,4 +1,4 @@
-import styles from "@/styles/DoctorCard.module.scss";
+import styles from "../../styles/DoctorCards.module.scss";
 import Image from "next/image";
 import Data from "../data";
 import { PiPhoneCallFill } from "react-icons/pi";
