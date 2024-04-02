@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { userData } from "@/API/Apicall";
+import Apicall from "../apicall";
 
 const Data = ({ children }) => {
   const [user, setUser] = useState({});
@@ -8,7 +8,7 @@ const Data = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const users = await userData(20);
+        const users = await Apicall(20);
         setUser(users);
       } catch (error) {
         console.error("Errore nel caricamento dei dati degli utenti:", error);
